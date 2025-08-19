@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Stardew Valley</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="src/imagens/logo.png" alt="Stardew Valley">
+        <h1>Checklist para a Perfeição</h1>
+        <p>**SITE EM DESENVOLVIMENTO**</p>
+    </header>
+    
+    <main>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Coleção</a>
+            <a href="#">Monstros</a>
+            <a href="#">Amigos</a>
+            <a href="#">Frutas-Estrelas</a>
+            <a href="#">Receitas</a>
+            <a href="#">Fabricação</a>
+            <a href="#">Peixes</a>
+            <a href="#">Nozes Douradas</a>
+        </nav> 
+        <div class="button">
+            <button data-estacao="primavera">&#x1F338 Primavera</button>
+            <button data-estacao="verao">&#x1F31E Verão</button>
+            <button data-estacao="outono">&#x1F342 Outono</button>
+            <button data-estacao="inverno">&#x2744 Inverno</button>
+            <button data-estacao="gengibre">&#x1F334 Ilha Gengibre</button>
+            <button data-estacao="qualquer">&#x1F308 Todas as Estações</button>
+            <button id="todas">&#x1F355 Todas as Receitas</button>
+        </div>
+        <div class="caixa">
+            <h1>Receitas</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>&#x2714</th>
+                    <th>Imagem</th>
+                    <th>Receita</th>
+                    <th>Ingredientes</th>
+                    <th>Onde conseguir a receita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-estacao="qualquer">
+                    <td><input type="checkbox" id="ovo-frito"></td>
+                    <td><img class="principal" src="src/imagens/receitas/ovo.frito.png" alt="Ovo Frito"></td>
+                    <td>Ovo Frito</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo">Ovo (1)</td>
+                    <td>Recompensa de atualização da Casa da Fazenda</td>
+                </tr>
+                <tr data-estacao="qualquer">
+                    <td><input type="checkbox" id="omelete"></td>
+                    <td><img class="principal" src="src/imagens/receitas/omelete.png" alt="Omelete"></td>
+                    <td>Omelete</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1) <br> <img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
+                    <td>Programa "Rainha do Molho", 28 da Primavera, Ano 1</td>
+                </tr>
+                <tr data-estacao="primavera">
+                    <td><input type="checkbox" id="salada"></td>
+                    <td><img class="principal" src="src/imagens/receitas/salada.png" alt="Salada"></td>
+                    <td>Salada</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/alho.poro.png" alt="Alho Poró"> Alho-poró (1) <br> <img class="ingrediente" src="src/imagens/colecao/dente.de.leao.png" alt="Dente-de-Leão"> Dente-de-Leão (1) <br> <img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1) </td>
+                    <td>Mais de 3 corações com a Emily</td>
+                </tr>
+                <tr data-estacao="primavera">
+                    <td><input type="checkbox" id="couve.flor.com.queijo"></td>
+                    <td><img class="principal" src="src/imagens/receitas/couve.flor.com.queijo.png" alt="Couve-flor com Queijo"></td>
+                    <td>Couve-flor com Queijo</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/couve.flor.png" alt="Couve-flor"> Couve-flor (1) <br> <img class="ingrediente" src="src/imagens/colecao/queijo.png" alt="Queijo"> Queijo (1) <br></td>
+                    <td>Mais de 3 corações com a Pam</td>
+                </tr>
+                <tr data-estacao="primavera verao">
+                    <td><input type="checkbox" id="peixe.assado"></td>
+                    <td><img class="principal" src="src/imagens/receitas/peixe.assado.png" alt="Peixe Assado"></td>
+                    <td>Peixe Assado</td>
+                    <td><img class="ingrediente" src="src/imagens/peixes/peixe.sol.png" alt="Peixe-sol"> Peixe-sol (1) <br> <img class="ingrediente" src="src/imagens/peixes/brema.png" alt="Brema"> Brema (1) <br> <img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) </td>
+                    <td>Programa "Rainha do Molho", 7 do Verão, Ano 1</td>
+                </tr>
+                <tr data-estacao="primavera">
+                    <td><input type="checkbox" id="sopa.de.chirivia"></td>
+                    <td><img class="principal" src="src/imagens/receitas/sopa.de.chirivia.png" alt="Sopa de Chirívia"></td>
+                    <td>Sopa de Chirívia</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/chirivia.png" alt="Chirívia"> Chirívia (1) <br> <img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br> <img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1) </td>
+                    <td>Mais de 3 corações com a Caroline</td>
+                </tr>
+                <tr data-estacao="verao outono">
+                    <td><input type="checkbox" id="mexido.de.legumes"></td>
+                    <td><img class="principal" src="src/imagens/receitas/mexido.de.legumes.png" alt="Mexido de Legumes"></td>
+                    <td>Mexido de Legumes</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1) <em>*verão*</em> <br> <img class="ingrediente" src="src/imagens/colecao/beterraba.png" alt="Beterraba"> Beterraba (1) <em>*outono*</em> </td>
+                    <td>Mais de 7 corações com a Caroline</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="caixa">
+            <h1>Pesca</h1>
+        </div>
+        <script src="src/js/script.js"></script>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://github.com/KatherineQdt" target="_blank" rel="external">@KatherineQdt</a></p>
+    </footer>
+</body>
+</html>
