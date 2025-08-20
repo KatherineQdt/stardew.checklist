@@ -6,6 +6,10 @@ const botoes = document.querySelectorAll(".button button");
 const showAllButton = document.getElementById("todas");
 const receitas = document.querySelectorAll("tbody tr");
 
+//config da nav
+const toggle = document.querySelector(".menu-toggle");
+const links = document.querySelector(".menu-links");
+
 // Percorre cada checkbox
 checkboxes.forEach(cb => {
   // Quando o usuário marca ou desmarca, salva no LocalStorage
@@ -53,4 +57,8 @@ showAllButton.addEventListener("click", () => {
 
   // Mostra todas as receitas
   receitas.forEach(r => (r.style.display = ""));
+});
+
+toggle.addEventListener("click", () => {
+  links.classList.toggle("active");
 });

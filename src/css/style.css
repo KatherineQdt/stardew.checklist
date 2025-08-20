@@ -22,12 +22,11 @@
 }
 
 body {
-  height: 95vh;
+  height: 94vh;
   font-family: Arial, sans-serif;
   background-image: url("../imagens/fundo.jpg");
   background-size: cover;
   background-attachment: fixed;
-  margin: 20px;
   color: #333;
 }
 
@@ -35,6 +34,12 @@ header > img{
   display: block;
   margin: auto;
   max-width: 350px;
+}
+
+@media (max-width: 600px){
+  .titulo{
+    width: 80%;
+  }
 }
 
 header > h1{
@@ -69,7 +74,7 @@ nav{
   border: 2px solid #953b0a;
 }
 
-nav > a{
+nav a{
   background-color: rgba(255, 255, 255, 0.096);
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -84,10 +89,41 @@ nav > a{
   transition-duration: 0.5s;
 }
 
-nav > a:hover{
+nav a:hover{
   border-radius: 5px;
   color: black;
   background-color: #d1782a;
+}
+
+/* Estilo base: mobile-first */
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-links {
+  display: none; /* escondido até clicar no hamburguer */
+  flex-direction: column;
+}
+
+/* Quando o hamburguer for clicado, ativa o menu */
+.menu-links.active {
+  display: flex;
+}
+
+
+/* Desktop */
+@media (min-width: 870px) {
+  .menu-toggle {
+    display: none; /* some no desktop */
+  }
+
+  .menu-links {
+    display: flex; /* aparece sempre */
+    flex-direction: row; /* lado a lado */
+    justify-content: center; /* centraliza */
+    
+  }
 }
 
 main{
@@ -174,9 +210,10 @@ table {
 }
 
 th, td {
-  padding: 12px;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   text-align: center;
+  font-size: 1em;
 }
 
 th {
@@ -188,8 +225,8 @@ td img {
 }
 
 img.principal {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
 }
 
 img.ingrediente {

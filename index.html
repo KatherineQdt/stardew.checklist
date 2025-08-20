@@ -8,23 +8,26 @@
 </head>
 <body>
     <header>
-        <img src="src/imagens/logo.png" alt="Stardew Valley">
+        <img src="src/imagens/logo.png" alt="Stardew Valley" class="titulo">
         <h1>Checklist para a Perfeição</h1>
         <p>**SITE EM DESENVOLVIMENTO**</p>
     </header>
     
     <main>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Coleção</a>
-            <a href="#">Monstros</a>
-            <a href="#">Amigos</a>
-            <a href="#">Frutas-Estrelas</a>
-            <a href="#">Receitas</a>
-            <a href="#">Fabricação</a>
-            <a href="#">Peixes</a>
-            <a href="#">Nozes Douradas</a>
-        </nav> 
+            <div class="menu-toggle">☰</div>
+            <div class="menu-links">
+                <a href="#">Home</a>
+                <a href="#">Coleção</a>
+                <a href="#">Monstros</a>
+                <a href="#">Amigos</a>
+                <a href="#">Frutas-Estrelas</a>
+                <a href="#">Receitas</a>
+                <a href="#">Fabricação</a>
+                <a href="#">Peixes</a>
+                <a href="#">Nozes Douradas</a>
+            </div>
+        </nav>
         <div class="button">
             <button data-estacao="primavera">&#x1F338 Primavera</button>
             <button data-estacao="verao">&#x1F31E Verão</button>
@@ -95,6 +98,41 @@
                     <td>Mexido de Legumes</td>
                     <td><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1) <em>*verão*</em> <br> <img class="ingrediente" src="src/imagens/colecao/beterraba.png" alt="Beterraba"> Beterraba (1) <em>*outono*</em> </td>
                     <td>Mais de 7 corações com a Caroline</td>
+                </tr>
+                <tr data-estacao="primavera">
+                    <td><input type="checkbox" id="cafe.da.manha.completo"></td>
+                    <td><img class="principal" src="src/imagens/receitas/cafe.da.manha.completo.png" alt="Café da  Manhã Completo"></td>
+                    <td>Café da Manhã Completo</td>
+                    <td><img class="ingrediente" src="src/imagens/receitas/ovo.frito.png" alt="Ovo Frito"> Ovo Frito (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br><img class="ingrediente" src="src/imagens/receitas/batata.palha.png" alt="Batata-palha"> Batata-palha (1)<br><img class="ingrediente" src="src/imagens/receitas/panquecas.png" alt="Panquecas"> Panquecas (1)</td>
+                    <td>Programa "Rainha do Molho", 21 do Primavera, Ano 2</td>
+                </tr>
+                <tr data-estacao="inverno">
+                    <td><input type="checkbox" id="lula.frita"></td>
+                    <td><img class="principal" src="src/imagens/receitas/lula.frita.png" alt="Lula Frita"></td>
+                    <td>Lula Frita</td>
+                    <td><img class="ingrediente" src="src/imagens/peixes/lula.png" alt="Lula"> Lula (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) <br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
+                    <td>Mais de 3 corações com a Jodi</td>
+                </tr>
+                <tr data-estacao="qualquer">
+                    <td><input type="checkbox" id="pao.estranho"></td>
+                    <td><img class="principal" src="src/imagens/receitas/pao.estranho.png" alt="Pão Estranho"></td>
+                    <td>Pão Estranho</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) <br><img class="ingrediente" src="src/imagens/peixes/caramujo.png" alt="Caramujo"> Caramujo (1) <br><img class="ingrediente" src="src/imagens/colecao/maionese.nula.png" alt="Maionese Nula"> Maionese Nula (1)</td>
+                    <td>Mais de 7 corações com o Shane</td>
+                </tr>
+                <tr data-estacao="primavera verao outono inverno qualquer">
+                    <td><input type="checkbox" id="almoco.da.sorte"></td>
+                    <td><img class="principal" src="src/imagens/receitas/almoco.da.sorte.png" alt="Almoço da Sorte"></td>
+                    <td>Almoço da Sorte</td>
+                    <td><img class="ingrediente" src="src/imagens/peixes/pepino.do.mar.png" alt="Pepino-do-mar"> Pepino-do-mar (1) <em>*outono, inverno*</em><br><img class="ingrediente" src="src/imagens/receitas/tortilha.png" alt="Tortilha"> Tortilha <em>*verão, outono*</em>(1) <br><img class="ingrediente" src="src/imagens/colecao/jasmim.azul.png" alt="Jasmim-azul"> Jasmim-azul <em>*primavera*</em> (1)</td>
+                    <td>Programa "Rainha do Molho", 28 do Primavera, Ano 2</td>
+                </tr>
+                <tr data-estacao="primavera">
+                    <td><input type="checkbox" id="cogumelo.frito"></td>
+                    <td><img class="principal" src="src/imagens/receitas/cogumelo.frito.png" alt="Cogumelo Frito"></td>
+                    <td>Cogumelo Frito</td>
+                    <td><img class="ingrediente" src="src/imagens/colecao/cogumelo.comum.png" alt="Cogumelo Comum"> Cogumelo Comum (1)<br><img class="ingrediente" src="src/imagens/colecao/morel.png" alt="Morel"> Morel (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
+                    <td>Mais de 3 corações com o Demetrius</td>
                 </tr>
                 </tbody>
             </table>
