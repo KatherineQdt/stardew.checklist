@@ -34,8 +34,7 @@ body {
 header > img{
   display: block;
   margin: auto;
-  width: 30%;
-  height: 30%;
+  max-width: 350px;
 }
 
 header > h1{
@@ -155,6 +154,12 @@ main h1{
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   padding: 10px;
   margin: 20px 15px;
+  overflow-x: auto;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* adiciona rolagem horizontal */
 }
 
 table {
