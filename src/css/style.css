@@ -233,6 +233,10 @@ img.ingrediente {
   height: 32px;
 }
 
+em{
+  font-size: 0.9em;
+}
+
 footer{
   background-color: #965114;
   margin: 0px -20px;
