@@ -274,6 +274,30 @@ main h1{
   }
 }
 
+.caixa-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 3px;
+  margin-bottom: -10px;
+}
+
+.esconde {
+  margin-bottom: 10px;
+  width: 52px;             /* tamanho do botão */
+  height: 52px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* ajusta a imagem */
+  border: none;            /* se quiser sem borda */
+  cursor: pointer;         /* mãozinha */
+}
+
+.caixa.collapsed .table-container {
+  display: none;
+}
+
 .table-container {
   width: 100%;
   overflow-x: auto; /* adiciona rolagem horizontal */
@@ -304,7 +328,7 @@ th {
   background-color: #d9a066;
   color: #333; 
   font-weight: bold;
-  padding: 12px;
+  padding: 8px;
   border-bottom: 2px solid #8b5a2b;
   position: sticky;
   top: 0;

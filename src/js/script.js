@@ -86,6 +86,28 @@ toggle.addEventListener("click", () => {
       let allChecked = Array.from(checkboxes).every(cb => cb.checked);
 
       // Marca ou desmarca todos
-      checkboxes.forEach(cb => cb.checked = !allChecked);
+     // Marca ou desmarca todos + salva no localStorage
+      checkboxes.forEach(cb => {
+        cb.checked = !allChecked;
+        localStorage.setItem(cb.id, cb.checked); // aqui salva o estado de cada checkbox
+      });
     });
   });
+
+document.querySelectorAll(".esconde").forEach(btn => {
+  btn.textContent = ""; // garante que não tem texto
+
+  btn.addEventListener("click", () => {
+    const caixa = btn.closest(".caixa");
+    caixa.classList.toggle("collapsed");
+
+    if (caixa.classList.contains("collapsed")) {
+      btn.style.backgroundImage = "url('src/imagens/baixo.png')";
+    } else {
+      btn.style.backgroundImage = "url('src/imagens/cima.png')";
+    }
+  });
+
+  // ícone inicial (aberto)
+  btn.style.backgroundImage = "url('src/imagens/cima.png')";
+});
