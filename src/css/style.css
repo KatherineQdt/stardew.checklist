@@ -92,6 +92,13 @@ nav{
   border: 2px solid #953b0a;
 }
 
+@media (max-width: 600px){
+  nav{
+    padding: 10px 0px;
+    margin: -11px 0px;
+  }
+}
+
 nav a{
   background-color: rgba(255, 255, 255, 0.096);
   border-radius: 5px;
@@ -158,6 +165,12 @@ main{
   padding: 10px;
   margin: auto;
   margin-bottom: 15px;
+}
+
+@media (max-width: 600px){
+  main{
+    padding: 10px 0px;
+  }
 }
 
 .button{
@@ -249,38 +262,102 @@ main h1{
   border: 2px solid #953b0a;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  padding: 10px;
+  padding: 20px;
   margin: 20px 15px;
-  overflow-x: auto;
-  min-width: 300px;
-  max-width: 1100px;
+  /*overflow-x: auto;*/
+}
+
+@media (max-width: 600px){
+  .caixa{
+    margin: 20px 0px;
+    padding: 15px ;
+  }
 }
 
 .table-container {
   width: 100%;
   overflow-x: auto; /* adiciona rolagem horizontal */
+  border-radius: 5px;
 }
 
 table {
-  width: 98%;
-  margin: auto;
+  width: 100%;
   border-collapse: collapse;
-  background: #fff8e1;
+  background-color: #faedce;
   border-radius: 5px;
-  border: 1px solid #953b0a;
+  border: 2px solid #8b5a2b;
   overflow: hidden;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-width: 600px;
 }
 
 th, td {
   padding: 8px;
   border-bottom: 1px solid #ddd;
-  text-align: center;
+  text-align: left;
   font-size: 1em;
 }
 
 th {
-  background-color: #f4d35e;
+  /*background-color: #f4d35e;*/
+  background-color: #d9a066;
+  color: #333; 
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #8b5a2b;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-shadow: 2px 2px 0 #ffffff, -0.2px -0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff;
+}
+
+th button{
+  padding: 0px 2px;
+  background-color: white;
+  border: solid 2px #333;
+}
+
+th button:hover{
+  background-color: #e6cab0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fdf2cf;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8e5b4;
+}
+
+tbody tr:hover {
+  background-color: #e6d490; /* destaque quando passa o mouse */
+  transition: 0.2s;
+}
+
+/* Células */
+td {
+  padding: 10px;
+  /*border-bottom: 1px solid #c9a66b; /* marrom claro */
+  vertical-align: middle;
+}
+
+/* Checkbox centralizado */
+td:first-child {
+  text-align: center;
+}
+
+/* Imagens */
+td img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated; /* mantém estilo do jogo */
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Realce de seleção (quando marcar a caixa) */
+tr.selected {
+  background-color: #a4d07b !important; /* verde claro, estilo natureza */
 }
 
 td img {

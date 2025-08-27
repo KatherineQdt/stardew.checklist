@@ -2,7 +2,7 @@
 const checkboxes = document.querySelectorAll("input[type='checkbox']");
 
 // Seleciona todos os buttons da página e itens da tabela
-const botoes = document.querySelectorAll(".button button");
+const botoes = document.querySelectorAll(".button button[data-estacao]");
 const showAllButton = document.getElementById("todas");
 const receitas = document.querySelectorAll("tbody tr");
 
@@ -27,9 +27,13 @@ checkboxes.forEach(cb => {
 botoes.forEach(botao => {
   botao.addEventListener("click", () => {
     // Remove "active" de todos os botões
-    botoes.forEach(b => b.classList.remove("active"));
+    if (botao.classList.contains("active")) {
+      botao.classList.remove("active");
+      receitas.forEach(r => (r.style.display = ""));
+      return; // sai da função
+    }
 
-    // Marca só o botão clicado
+    botoes.forEach(b => b.classList.remove("active"));
     botao.classList.add("active");
 
     const estacao = botao.dataset.estacao;
@@ -49,6 +53,14 @@ botoes.forEach(botao => {
 
 // Botão "Todas"
 showAllButton.addEventListener("click", () => {
+
+    if (showAllButton.classList.contains("active")) {
+    // Se já estava ativo → desativa e mostra tudo
+    showAllButton.classList.remove("active");
+    receitas.forEach(r => (r.style.display = ""));
+    return;
+  }
+
   // Remove "active" de todos os botões
   botoes.forEach(btn => btn.classList.remove("active"));
 
@@ -62,3 +74,18 @@ showAllButton.addEventListener("click", () => {
 toggle.addEventListener("click", () => {
   links.classList.toggle("active");
 });
+
+ // Pega todos os botões "toggle-all"
+  document.querySelectorAll(".toggle-all").forEach(button => {
+    button.addEventListener("click", function () {
+      // Acha a tabela em que esse botão está
+      let table = button.closest("table");
+      let checkboxes = table.querySelectorAll("tbody input[type='checkbox']");
+      
+      // Verifica se todos já estão marcados
+      let allChecked = Array.from(checkboxes).every(cb => cb.checked);
+
+      // Marca ou desmarca todos
+      checkboxes.forEach(cb => cb.checked = !allChecked);
+    });
+  });
