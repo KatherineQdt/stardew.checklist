@@ -29,6 +29,9 @@
                 <a href="#">Nozes Douradas</a>
             </div>
         </nav>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
         <div class="button">
             <button data-estacao="primavera">&#x1F338 Primavera</button>
             <button data-estacao="verao">&#x1F31E Verão</button>
@@ -55,560 +58,560 @@
                     </thead>
                     <tbody>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="ovo-frito"></td>
+                        <td><input type="checkbox" class="task" id="ovo-frito"></td>
                         <td><img class="principal" src="src/imagens/receitas/ovo.frito.png" alt="Ovo Frito"></td>
                         <td>Ovo Frito</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo">Ovo (1)</td>
                         <td>Recompensa de atualização da Casa da Fazenda</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="omelete"></td>
+                        <td><input type="checkbox" class="task" id="omelete"></td>
                         <td><img class="principal" src="src/imagens/receitas/omelete.png" alt="Omelete"></td>
                         <td>Omelete</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1) <br> <img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Programa "Rainha do Molho", 28 da Primavera, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="salada"></td>
+                        <td><input type="checkbox" class="task" id="salada"></td>
                         <td><img class="principal" src="src/imagens/receitas/salada.png" alt="Salada"></td>
                         <td>Salada</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/alho.poro.png" alt="Alho Poró"> Alho-poró (1) <br> <img class="ingrediente" src="src/imagens/colecao/dente.de.leao.png" alt="Dente-de-Leão"> Dente-de-Leão (1) <br> <img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1) </td>
                         <td>Mais de 3 corações com a Emily</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="couve.flor.com.queijo"></td>
+                        <td><input type="checkbox" class="task" id="couve.flor.com.queijo"></td>
                         <td><img class="principal" src="src/imagens/receitas/couve.flor.com.queijo.png" alt="Couve-flor com Queijo"></td>
                         <td>Couve-flor com Queijo</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/couve.flor.png" alt="Couve-flor"> Couve-flor (1) <br> <img class="ingrediente" src="src/imagens/colecao/queijo.png" alt="Queijo"> Queijo (1) <br></td>
                         <td>Mais de 3 corações com a Pam</td>
                     </tr>
                     <tr data-estacao="primavera verao">
-                        <td><input type="checkbox" id="peixe.assado"></td>
+                        <td><input type="checkbox" class="task" id="peixe.assado"></td>
                         <td><img class="principal" src="src/imagens/receitas/peixe.assado.png" alt="Peixe Assado"></td>
                         <td>Peixe Assado</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/peixe.sol.png" alt="Peixe-sol"> Peixe-sol (1) <br> <img class="ingrediente" src="src/imagens/peixes/brema.png" alt="Brema"> Brema (1) <br> <img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) </td>
                         <td>Programa "Rainha do Molho", 7 do Verão, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="sopa.de.chirivia"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.chirivia"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.chirivia.png" alt="Sopa de Chirívia"></td>
                         <td>Sopa de Chirívia</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/chirivia.png" alt="Chirívia"> Chirívia (1) <br> <img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br> <img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1) </td>
                         <td>Mais de 3 corações com a Caroline</td>
                     </tr>
                     <tr data-estacao="verao outono">
-                        <td><input type="checkbox" id="mexido.de.legumes"></td>
+                        <td><input type="checkbox" class="task" id="mexido.de.legumes"></td>
                         <td><img class="principal" src="src/imagens/receitas/mexido.de.legumes.png" alt="Mexido de Legumes"></td>
                         <td>Mexido de Legumes</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1) <em>*verão*</em> <br> <img class="ingrediente" src="src/imagens/colecao/beterraba.png" alt="Beterraba"> Beterraba (1) <em>*outono*</em> </td>
                         <td>Mais de 7 corações com a Caroline</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="cafe.da.manha.completo"></td>
+                        <td><input type="checkbox" class="task" id="cafe.da.manha.completo"></td>
                         <td><img class="principal" src="src/imagens/receitas/cafe.da.manha.completo.png" alt="Café da  Manhã Completo"></td>
                         <td>Café da Manhã Completo</td>
                         <td><img class="ingrediente" src="src/imagens/receitas/ovo.frito.png" alt="Ovo Frito"> Ovo Frito (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br><img class="ingrediente" src="src/imagens/receitas/batata.palha.png" alt="Batata-palha"> Batata-palha (1)<br><img class="ingrediente" src="src/imagens/receitas/panquecas.png" alt="Panquecas"> Panquecas (1)</td>
                         <td>Programa "Rainha do Molho", 21 da Primavera, Ano 2</td>
                     </tr>
                     <tr data-estacao="inverno">
-                        <td><input type="checkbox" id="lula.frita"></td>
+                        <td><input type="checkbox" class="task" id="lula.frita"></td>
                         <td><img class="principal" src="src/imagens/receitas/lula.frita.png" alt="Lula Frita"></td>
                         <td>Lula Frita</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/lula.png" alt="Lula"> Lula (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) <br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Mais de 3 corações com a Jodi</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="pao.estranho"></td>
+                        <td><input type="checkbox" class="task" id="pao.estranho"></td>
                         <td><img class="principal" src="src/imagens/receitas/pao.estranho.png" alt="Pão Estranho"></td>
                         <td>Pão Estranho</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1) <br><img class="ingrediente" src="src/imagens/peixes/caramujo.png" alt="Caramujo"> Caramujo (1) <br><img class="ingrediente" src="src/imagens/colecao/maionese.nula.png" alt="Maionese Nula"> Maionese Nula (1)</td>
                         <td>Mais de 7 corações com o Shane</td>
                     </tr>
                     <tr data-estacao="primavera verao outono inverno qualquer">
-                        <td><input type="checkbox" id="almoco.da.sorte"></td>
+                        <td><input type="checkbox" class="task" id="almoco.da.sorte"></td>
                         <td><img class="principal" src="src/imagens/receitas/almoco.da.sorte.png" alt="Almoço da Sorte"></td>
                         <td>Almoço da Sorte</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/pepino.do.mar.png" alt="Pepino-do-mar"> Pepino-do-mar (1) <em>*outono, inverno*</em><br><img class="ingrediente" src="src/imagens/receitas/tortilha.png" alt="Tortilha"> Tortilha (1) <em>*verão, outono*</em><br><img class="ingrediente" src="src/imagens/colecao/jasmim.azul.png" alt="Jasmim-azul"> Jasmim-azul (1) <em>*primavera*</em></td>
                         <td>Programa "Rainha do Molho", 28 da Primavera, Ano 2</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="cogumelo.frito"></td>
+                        <td><input type="checkbox" class="task" id="cogumelo.frito"></td>
                         <td><img class="principal" src="src/imagens/receitas/cogumelo.frito.png" alt="Cogumelo Frito"></td>
                         <td>Cogumelo Frito</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/cogumelo.comum.png" alt="Cogumelo Comum"> Cogumelo Comum (1)<br><img class="ingrediente" src="src/imagens/colecao/morel.png" alt="Morel"> Morel (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Mais de 3 corações com o Demetrius</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="pizza"></td>
+                        <td><input type="checkbox" class="task" id="pizza"></td>
                         <td><img class="principal" src="src/imagens/receitas/pizza.png" alt="Pizza"></td>
                         <td>Pizza</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1)<br><img class="ingrediente" src="src/imagens/colecao/queijo.png" alt="Queijo"> Queijo (1)</td>
                         <td>Programa "Rainha do Molho", 7 da Primavera, Ano 2</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="sopa.de.vagens"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.vagens"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.vagens.png" alt="Sopa de Vagens"></td>
                         <td>Sopa de Vagens</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/vagens.png" alt="Vagem"> Vagem (2)</td>
                         <td>Mais de 7 corações com o Clint</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="inhames.com.cobertura"></td>
+                        <td><input type="checkbox" class="task" id="inhames.com.cobertura"></td>
                         <td><img class="principal" src="src/imagens/receitas/inhames.com.cobertura.png" alt="Inhames com Cobertura"></td>
                         <td>Inhames com Cobertura</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/inhame.png" alt="Inhame"> Inhame (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açucar"> Açucar (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Outono, Ano 1</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="carpa.surpresa"></td>
+                        <td><input type="checkbox" class="task" id="carpa.surpresa"></td>
                         <td><img class="principal" src="src/imagens/receitas/carpa.surpresa.png" alt="Carpa-surpresa"></td>
                         <td>Carpa-surpresa</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/carpa.png" alt="Vagem"> Carpa (4)</td>
                         <td>Programa "Rainha do Molho", 7 do Verão, Ano 2</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="batata.palha"></td>
+                        <td><input type="checkbox" class="task" id="batata.palha"></td>
                         <td><img class="principal" src="src/imagens/receitas/batata.palha.png" alt="Batata-palha"></td>
                         <td>Batata-palha</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/batata.png" alt="Batata"> Batata (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Programa "Rainha do Molho", 14 da Primavera, Ano 2</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="panquecas"></td>
+                        <td><input type="checkbox" class="task" id="panquecas"></td>
                         <td><img class="principal" src="src/imagens/receitas/panquecas.png" alt="Panquecas"></td>
                         <td>Panquecas</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)</td>
                         <td>Programa "Rainha do Molho", 14 do Verão, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera outono">
-                        <td><input type="checkbox" id="jantar.de.salmao"></td>
+                        <td><input type="checkbox" class="task" id="jantar.de.salmao"></td>
                         <td><img class="principal" src="src/imagens/receitas/jantar.de.salmao.png" alt="Jantar de Salmão"></td>
                         <td>Jantar de Salmão</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/salmon.png" alt="Salmão"> Salmão (1) <em>*outono*</em><br><img class="ingrediente" src="src/imagens/colecao/amaranto.png" alt="Amaranto"> Amaranto (1) <em>*outono*</em><br><img class="ingrediente" src="src/imagens/colecao/couve.png" alt="Couve"> Couve (1) <em>*primavera*</em></td>
                         <td>Mais de 3 corações com o Gus</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="taco.de.peixe"></td>
+                        <td><input type="checkbox" class="task" id="taco.de.peixe"></td>
                         <td><img class="principal" src="src/imagens/receitas/taco.de.peixe.png" alt="Taco de Peixe"></td>
                         <td>Taco de Peixe</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/atum.png" alt="Atum"> Atum (1)<br><img class="ingrediente" src="src/imagens/receitas/tortilha.png" alt="Tortilha"> Tortilha (1)<br><img class="ingrediente" src="src/imagens/colecao/repolho.roxo.png" alt="Repolho roxo"> Repolho roxo (1)<br><img class="ingrediente" src="src/imagens/colecao/maionese.png" alt="Maionese"> Maionese (1)</td>
                         <td>Mais de 7 corações com o Linus</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="achiga.crocante"></td>
+                        <td><input type="checkbox" class="task" id="achiga.crocante"></td>
                         <td><img class="principal" src="src/imagens/receitas/achiga.crocante.png" alt="Achigã Crocante"></td>
                         <td>Achigã Crocante</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/achiga.png" alt="Achigã"> Achigã (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Mais de 3 corações com o Kent</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="enroladinhos.de.pimenta"></td>
+                        <td><input type="checkbox" class="task" id="enroladinhos.de.pimenta"></td>
                         <td><img class="principal" src="src/imagens/receitas/enroladinhos.de.pimenta.png" alt="Enroladinhos de Pimenta"></td>
                         <td>Enroladinhos de Pimenta</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/pimenta.png" alt="Pimenta"> Pimenta (1)<br><img class="ingrediente" src="src/imagens/colecao/queijo.png" alt="Queijo"> Queijo (1)</td>
                         <td>Mais de 3 corações com o Shane</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="pao"></td>
+                        <td><input type="checkbox" class="task" id="pao"></td>
                         <td><img class="principal" src="src/imagens/receitas/pao.png" alt="Pão"></td>
                         <td>Pão</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)</td>
                         <td>Programa "Rainha do Molho", 28 do Verão, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera outono">
-                        <td><input type="checkbox" id="sopa.tom.kha"></td>
+                        <td><input type="checkbox" class="task" id="sopa.tom.kha"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.tom.kha.png" alt="Sopa Tom Kha"></td>
                         <td>Sopa Tom Kha</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/coco.png" alt="Coco"> Coco (1)<br><img class="ingrediente" src="src/imagens/peixes/camarao.png" alt="Camarão"> Camarão (1)<br><img class="ingrediente" src="src/imagens/colecao/cogumelo.comum.png" alt="Cogumelo Comum"> Cogumelo Comum (1)</td>
                         <td>Mais de 7 corações com a Sandy</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="sopa.de.truta"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.truta"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.truta.png" alt="Sopa de Truta"></td>
                         <td>Sopa de Truta</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/truta.arco.iris.png" alt="Truta Arco-íris"> Truta Arco-íris (1)<br><img class="ingrediente" src="src/imagens/peixes/alga.verde.png" alt="Algas Verdes"> Algas Verdes (1)</td>
                         <td>Programa "Rainha do Molho", 14 do Outono, Ano 1</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="bolo.de.chocolate"></td>
+                        <td><input type="checkbox" class="task" id="bolo.de.chocolate"></td>
                         <td><img class="principal" src="src/imagens/receitas/bolo.de.chocolate.png" alt="Bolo de Chocolate"></td>
                         <td>Bolo de Chocolate</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)</td>
                         <td>Programa "Rainha do Molho", 14 do Inverno, Ano 1</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="bolo.rosa"></td>
+                        <td><input type="checkbox" class="task" id="bolo.rosa"></td>
                         <td><img class="principal" src="src/imagens/receitas/bolo.rosa.png" alt="Bolo Rosa"></td>
                         <td>Bolo Rosa</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/melao.png" alt="Melão"> Melão (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Verão, Ano 2</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="torta.de.ruibarbo"></td>
+                        <td><input type="checkbox" class="task" id="torta.de.ruibarbo"></td>
                         <td><img class="principal" src="src/imagens/receitas/torta.de.ruibarbo.png" alt="Torta de Ruibarbo"></td>
                         <td>Torta de Ruibarbo</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/ruibarbo.png" alt="Ruibarbo"> Ruibarbo (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Mais de 7 corações com a Marnie</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="biscoito"></td>
+                        <td><input type="checkbox" class="task" id="biscoito"></td>
                         <td><img class="principal" src="src/imagens/receitas/biscoito.png" alt="Biscoito"></td>
                         <td>Biscoito</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)</td>
                         <td>Mais de 4 corações com a Evelyn (Vovó)</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="espaguete"></td>
+                        <td><input type="checkbox" class="task" id="espaguete"></td>
                         <td><img class="principal" src="src/imagens/receitas/espaguete.png" alt="Espaguete"></td>
                         <td>Espaguete</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1)</td>
                         <td>Mais de 3 corações com o Lewis</td>
                     </tr>
                     <tr data-estacao="primavera outono">
-                        <td><input type="checkbox" id="enguia.frita"></td>
+                        <td><input type="checkbox" class="task" id="enguia.frita"></td>
                         <td><img class="principal" src="src/imagens/receitas/enguia.frita.png" alt="Enguia Frita"></td>
                         <td>Enguia Frita</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/enguia.png" alt="Enguia"> Enguia (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Mais de 3 corações com o George</td>
                     </tr>
                     <tr data-estacao="primavera verao outono">
-                        <td><input type="checkbox" id="enguia.picante"></td>
+                        <td><input type="checkbox" class="task" id="enguia.picante"></td>
                         <td><img class="principal" src="src/imagens/receitas/engui.picante.png" alt="Enguia Picante"></td>
                         <td>Enguia Picante</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/enguia.png" alt="Enguia"> Enguia (1) <em>*primavera, outono*</em><br><img class="ingrediente" src="src/imagens/colecao/pimenta.png" alt="Pimenta"> Pimenta (1) <em>*verão*</em></td>
                         <td>Mais de 7 corações com o George</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="sashimi"></td>
+                        <td><input type="checkbox" class="task" id="sashimi"></td>
                         <td><img class="principal" src="src/imagens/receitas/sashimi.png" alt="Sashimi"></td>
                         <td>Sashimi</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/peixe.sol.png" alt="Peixe"> Qualquer peixe (1)</td>
                         <td>Mais de 3 corações com o Linus</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="rolinhos.de.arroz"></td>
+                        <td><input type="checkbox" class="task" id="rolinhos.de.arroz"></td>
                         <td><img class="principal" src="src/imagens/receitas/rolinhos.de.arroz.png" alt="Rolinhos de Arroz"></td>
                         <td>Rolinhos de Arroz</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/peixe.sol.png" alt="Peixe"> Qualquer peixe (1)<br><img class="ingrediente" src="src/imagens/peixes/algas.marinhas.png" alt="Algas Marinhas"> Algas Marinhas (1)<br><img class="ingrediente" src="src/imagens/colecao/arroz.png" alt="Arroz"> Arroz (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Verão, Ano 1</td>
                     </tr>
                     <tr data-estacao="verao outono">
-                        <td><input type="checkbox" id="tortinha"></td>
+                        <td><input type="checkbox" class="task" id="tortinha"></td>
                         <td><img class="principal" src="src/imagens/receitas/tortilha.png" alt="Tortilha"></td>
                         <td>Tortilha</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/milho.png" alt="Milho"> Milho (1)</td>
                         <td>Programa "Rainha do Molho", 7 do Outono, Ano 1</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="prato.vermelho"></td>
+                        <td><input type="checkbox" class="task" id="prato.vermelho"></td>
                         <td><img class="principal" src="src/imagens/receitas/prato.vermelho.png" alt="Prato Vermelho"></td>
                         <td>Prato Vermelho</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/repolho.roxo.png" alt="Repolho Roxo"> Repolho Roxo (1)<br><img class="ingrediente" src="src/imagens/colecao/rabanete.png" alt="Rabanete"> Rabanete (1)</td>
                         <td>Mais de 7 corações com a Emily</td>
                     </tr>
                     <tr data-estacao="verao outono">
-                        <td><input type="checkbox" id="parmesao.com.beringela"></td>
+                        <td><input type="checkbox" class="task" id="parmesao.com.beringela"></td>
                         <td><img class="principal" src="src/imagens/receitas/parmesao.com.beringela.png" alt="Parmesão com Beringela"></td>
                         <td>Parmesão com Beringela</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/beringela.png" alt="Beringela"> Beringela (1) <em>*outono*</em><br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1) <em>*verão*</em></td>
                         <td>Mais de 7 corações com o Lewis</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="pudim.de.arroz"></td>
+                        <td><input type="checkbox" class="task" id="pudim.de.arroz"></td>
                         <td><img class="principal" src="src/imagens/receitas/pudim.de.arroz.png" alt="Pudim de Arroz"></td>
                         <td>Pudim de Arroz</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açucar"> Açucar (1)<br><img class="ingrediente" src="src/imagens/colecao/arroz.png" alt="Arroz"> Arroz (1)</td>
                         <td>Mais de 7 corações com a Evelyn (Vovó)</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="sorvete"></td>
+                        <td><input type="checkbox" class="task" id="sorvete"></td>
                         <td><img class="principal" src="src/imagens/receitas/sorvete.png" alt="Sorvete"></td>
                         <td>Sorvete</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1) <br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açucar"> Açucar (1)</td>
                         <td>Mais de 7 corações com a Jodi</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="torta.de.mirtilo "></td>
+                        <td><input type="checkbox" class="task" id="torta.de.mirtilo "></td>
                         <td><img class="principal" src="src/imagens/receitas/torta.de.mirtilo.png" alt="Torta de Mirtilo"></td>
                         <td>Torta de Mirtilo</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/mirtilo.png" alt="Mirtilo"> Mirtilo (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açucar"> Açucar (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)</td>
                         <td>Mais de 3 corações com o Pierre</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="prato.de.outono"></td>
+                        <td><input type="checkbox" class="task" id="prato.de.outono"></td>
                         <td><img class="principal" src="src/imagens/receitas/prato.do.outono.png" alt="Prato de Outono"></td>
                         <td>Prato de Outono</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/inhame.png" alt="Inhame"> Inhame (1)<br><img class="ingrediente" src="src/imagens/colecao/abobora.png" alt="Abóbora"> Abobora (1)</td>
                         <td>Mais de 7 corações com o Demetrius</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="sopa.de.abobora"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.abobora"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.abobora.png" alt="Sopa de Abóbora"></td>
                         <td>Sopa de Abóbora</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/abobora.png" alt="Abóbora"> Abobora (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Mais de 7 corações com a Robin</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="superprato"></td>
+                        <td><input type="checkbox" class="task" id="superprato"></td>
                         <td><img class="principal" src="src/imagens/receitas/super.prato.png" alt="Superprato"></td>
                         <td>Superprato</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/couve.chinesa.png" alt="Couve Chinesa"> Couve chinesa (1)<br><img class="ingrediente" src="src/imagens/colecao/oxicoco.png" alt="Oxicoco"> Oxicoco (1)<br><img class="ingrediente" src="src/imagens/colecao/alcachofra.png" alt="Alcachofra"> Alcachofra (1)</td>
                         <td>Mais de 7 corações com o Kent</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="molho.de.oxicoco"></td>
+                        <td><input type="checkbox" class="task" id="molho.de.oxicoco"></td>
                         <td><img class="principal" src="src/imagens/receitas/molho.de.oxicoco.png" alt="Molho de Oxicoco"></td>
                         <td>Molho de Oxicoco</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/oxicoco.png" alt="Oxicoco"> Oxicoco (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Mais de 7 corações com o Gus</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="recheio"></td>
+                        <td><input type="checkbox" class="task" id="recheio"></td>
                         <td><img class="principal" src="src/imagens/receitas/recheio.png" alt="Recheio"></td>
                         <td>Recheio</td>
                         <td><img class="ingrediente" src="src/imagens/receitas/pao.png" alt="Pão"> Pão (1)<br><img class="ingrediente" src="src/imagens/colecao/oxicoco.png" alt="Oxicoco"> Oxicoco (1)<br><img class="ingrediente" src="src/imagens/colecao/avela.png" alt="Avelã"> Avelã (1)</td>
                         <td>Mais de 7 corações com a Pam</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="almoco.de.fazendeiro"></td>
+                        <td><input type="checkbox" class="task" id="almoco.de.fazendeiro"></td>
                         <td><img class="principal" src="src/imagens/receitas/almoco.de.fazendeiro.png" alt="Almoço de Fazendeiro"></td>
                         <td>Almoço de Fazendeiro</td>
                         <td><img class="ingrediente" src="src/imagens/receitas/omelete.png" alt="Omelete"> Omelete (1)<br><img class="ingrediente" src="src/imagens/colecao/chirivia.png" alt="Chirivia"> Chirivia (1)</td>
                         <td>Habilidade Cultino Nível 3</td>
                     </tr>
                     <tr data-estacao="primavera outono inverno">
-                        <td><input type="checkbox" id="prato.do.mar"></td>
+                        <td><input type="checkbox" class="task" id="prato.do.mar"></td>
                         <td><img class="principal" src="src/imagens/receitas/prato.do.mar.png" alt="Prato do Mar"></td>
                         <td>Prato do Mar</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/sardinha.png" alt="Sardinha"> Sardinha (2)<br><img class="ingrediente" src="src/imagens/receitas/batata.palha.png" alt="Batata-palha"> Batata-palha (1)</td>
                         <td>Habilidade Pesca Nível 3</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="refeicao.de.mineiro"></td>
+                        <td><input type="checkbox" class="task" id="refeicao.de.mineiro"></td>
                         <td><img class="principal" src="src/imagens/receitas/refeicao.de.mineiro.png" alt="Refeição de Mineiro"></td>
                         <td>Refeição de Mineiro</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/cenoura.subterrania.png" alt="Cenoura Subterrâna"> Cenoura Subterrâna (2)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Habilidade Mineração Nível 3</td>
                     </tr>
                     <tr data-estacao="inverno">
-                        <td><input type="checkbox" id="prato.de.raizes"></td>
+                        <td><input type="checkbox" class="task" id="prato.de.raizes"></td>
                         <td><img class="principal" src="src/imagens/receitas/prato.de.raizes.png" alt="Prato de Raízes"></td>
                         <td>Prato de Raízes</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/cenoura.subterrania.png" alt="Cenoura Subterrâna"> Cenoura Subterrâna (1)<br><img class="ingrediente" src="src/imagens/colecao/raiz.de.inverno.png" alt="Raiz de Inverno"> Raiz de Inverno (1)</td>
                         <td>Habilidade Combate Nível 3</td>
                     </tr>
                     <tr data-estacao="primavera verao">
-                        <td><input type="checkbox" id="cafe.expresso.triplo"></td>
+                        <td><input type="checkbox" class="task" id="cafe.expresso.triplo"></td>
                         <td><img class="principal" src="src/imagens/receitas/cafe.expresso.triplo.png" alt="Café Expresso Triplo"></td>
                         <td>Café Expresso Triplo</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/cafe.png" alt="Café"> Café (3)</td>
                         <td>Saloon Fruta Estrelar por 5 000 ouros</td>
                     </tr>
                     <tr data-estacao="primavera verao outono inverno">
-                        <td><input type="checkbox" id="pudim.de.espuma.do.mar"></td>
+                        <td><input type="checkbox" class="task" id="pudim.de.espuma.do.mar"></td>
                         <td><img class="principal" src="src/imagens/receitas/pudim.de.espuma.do.mar.png" alt="Pudim de Espuma do Mar"></td>
                         <td>Pudim de Espuma do Mar</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/linguado.png" alt="Linguado"> Linguado (1) <em>*primavera, verão*</em><br><img class="ingrediente" src="src/imagens/peixes/carpa.da.meia.noie.png" alt="Carpa da Meia Noite"> Carpa da Meia-noite (1) <em>*outono, inverno*</em><br><img class="ingrediente" src="src/imagens/colecao/tinta.de.lula.png" alt="Tinta de Lula"> Tinta de Lula (1)<br></td>
                         <td>Habilidade Pesca Nível 9</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="sopa.de.alga"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.alga"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.algas.png" alt="Sopa de Alga"></td>
                         <td>Sopa de Alga</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/alga.verde.png" alt="Alga Verde"> Alga Verde (4)</td>
                         <td>Mais de 3 corações com o Clint</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="caldo.palido"></td>
+                        <td><input type="checkbox" class="task" id="caldo.palido"></td>
                         <td><img class="principal" src="src/imagens/receitas/caldo.palido.png" alt="Caldo Pálido"></td>
                         <td>Caldo Pálido</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/algas.brancas.png" alt="Algas Brancas"> Algas Brancas (2)</td>
                         <td>Mais de 3 corações com a Marnie</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="pudim.de.ameixa"></td>
+                        <td><input type="checkbox" class="task" id="pudim.de.ameixa"></td>
                         <td><img class="principal" src="src/imagens/receitas/pudim.de.ameixa.png" alt="Pudim de Ameixa"></td>
                         <td>Pudim de Ameixa</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/ameixa.selvagem.png" alt="Ameixa Selvagem"> Ameixa Selvagem (2)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Programa "Rainha do Molho", 7 do Inverno, Ano 1</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="molho.de.alcachofra"></td>
+                        <td><input type="checkbox" class="task" id="molho.de.alcachofra"></td>
                         <td><img class="principal" src="src/imagens/receitas/molho.de.alcachofra.png" alt="Molho de Alcachofra"></td>
                         <td>Molho de Alcachofra</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/alcachofra.png" alt="Alcachofra"> Alcachofra (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Programa "Rainha do Molho", 28 do Outono, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="refogado"></td>
+                        <td><input type="checkbox" class="task" id="refogado"></td>
                         <td><img class="principal" src="src/imagens/receitas/refogado.png" alt="Refogado"></td>
                         <td>Refogado</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/cenoura.subterrania.png" alt="Cenoura Subterrânea"> Cenoura Subterrânea (1)<br><img class="ingrediente" src="src/imagens/colecao/cogumelo.comum.png" alt="Cogumelo Comum"> Cogumelo Comum (1)<br><img class="ingrediente" src="src/imagens/colecao/couve.png" alt="Couve"> Couve (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Programa "Rainha do Molho", 7 da Primavera, Ano 1</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="avelas.torradas"></td>
+                        <td><input type="checkbox" class="task" id="avelas.torradas"></td>
                         <td><img class="principal" src="src/imagens/receitas/avela.torrada.png" alt="Avelãs Torradas"></td>
                         <td>Avelãs Torradas</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/avela.png" alt="Avelã"> Avelã (3)</td>
                         <td>Programa "Rainha do Molho", 28 do Verão, Ano 2  </td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="torta.de.abobora"></td>
+                        <td><input type="checkbox" class="task" id="torta.de.abobora"></td>
                         <td><img class="principal" src="src/imagens/receitas/torta.de.abobora.png" alt="Torta de Abóbora"></td>
                         <td>Torta de Abóbora</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/abobora.png" alt="Abóbora"> Abóbora (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Inverno, Ano 1</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="salada.de.rabanete"></td>
+                        <td><input type="checkbox" class="task" id="salada.de.rabanete"></td>
                         <td><img class="principal" src="src/imagens/receitas/salada.de.rabanete.png" alt="Salada de Rabanete"></td>
                         <td>Salada de Rabanete</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)<br><img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1)<br><img class="ingrediente" src="src/imagens/colecao/rabanete.png" alt="Rabante"> Rabante (1)</td>
                         <td>Programa "Rainha do Molho", 21 da Primavera, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera verao">
-                        <td><input type="checkbox" id="salada.de.frutas"></td>
+                        <td><input type="checkbox" class="task" id="salada.de.frutas"></td>
                         <td><img class="principal" src="src/imagens/receitas/salada.de.frutas.png" alt="Salada de Frutas"></td>
                         <td>Salada de Frutas</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/mirtilo.png" alt="Mirtilo"> Mirtilo (1) <em>*verão*</em><br><img class="ingrediente" src="src/imagens/colecao/melao.png" alt="Melão"> Melão (1) <em>*verão*</em><br><img class="ingrediente" src="src/imagens/colecao/damasco.png" alt="Damasco"> Damasco (1) <em>*primavera*</em></td>
                         <td>Programa "Rainha do Molho", 7 do Outono, Ano 2</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="torta.de.amoras"></td>
+                        <td><input type="checkbox" class="task" id="torta.de.amoras"></td>
                         <td><img class="principal" src="src/imagens/receitas/torta.de.amoras.png" alt="Torta de Amoras"></td>
                         <td>Torta de Amoras</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/amora.png" alt="Amora"> Amora (2)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)</td>
                         <td>Programa "Rainha do Molho", 14 do Outono, Ano 2</td>
                     </tr>
                     <tr data-estacao="outono">
-                        <td><input type="checkbox" id="doce.de.oxicoco"></td>
+                        <td><input type="checkbox" class="task" id="doce.de.oxicoco"></td>
                         <td><img class="principal" src="src/imagens/receitas/doce.de.oxicoco.png" alt="Doce de Oxicoco"></td>
                         <td>Doce de Oxicoco</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/oxicoco.png" alt="Oxicoco"> Oxicoco (1)<br><img class="ingrediente" src="src/imagens/colecao/maca.png" alt="Maça"> Maça (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açucar"> Açucar (1)</td>
                         <td>Programa "Rainha do Molho", 28 do Inverno, Ano 1</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="brusqueta"></td>
+                        <td><input type="checkbox" class="task" id="brusqueta"></td>
                         <td><img class="principal" src="src/imagens/receitas/brusqueta.png" alt="brusqueta"></td>
                         <td>Brusqueta</td>
                         <td><img class="ingrediente" src="src/imagens/receitas/pao.png" alt="Pão"> Pão (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)<br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Inverno, Ano 2</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="salada.de.repolho"></td>
+                        <td><input type="checkbox" class="task" id="salada.de.repolho"></td>
                         <td><img class="principal" src="src/imagens/receitas/salada.de.repolho.png" alt="Salada de Repolho"></td>
                         <td>Salada de Repolho</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/repolho.roxo.png" alt="Repolho Roxo"> Repolho roxo (1)<br><img class="ingrediente" src="src/imagens/colecao/vinagre.png" alt="Vinagre"> Vinagre (1)<br><img class="ingrediente" src="src/imagens/colecao/maionese.png" alt="Maionese"> Maionese (1)</td>
                         <td>Programa "Rainha do Molho", 14 da Primavera, Ano 1</td>
                     </tr>
                     <tr data-estacao="primavera verao">
-                        <td><input type="checkbox" id="risoto.de.samambaia"></td>
+                        <td><input type="checkbox" class="task" id="risoto.de.samambaia"></td>
                         <td><img class="principal" src="src/imagens/receitas/risoto.de.samambaia.png" alt="Risoto de Samambaia"></td>
                         <td>Risoto de Samambaia</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)<br><img class="ingrediente" src="src/imagens/colecao/broto.de.samambaia.png" alt="Broto de Samambaia"> Broto de Samambaia (1) <em>*verão*</em><br><img class="ingrediente" src="src/imagens/colecao/alho.png" alt="Alho"> Alho (1) <em>*primavera*</em></td>
                         <td>Programa "Rainha do Molho", 28 do Outono, Ano 2</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="bolinho.de.papoula"></td>
+                        <td><input type="checkbox" class="task" id="bolinho.de.papoula"></td>
                         <td><img class="principal" src="src/imagens/receitas/bolinho.de.papoula.png" alt="Bolinho de Papoula"></td>
                         <td>Bolinho de Papoula</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/papoula.png" alt="Papoula"> Papoula (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Programa "Rainha do Molho", 7 do Inverno, Ano 2</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="sopa.de.peixe"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.peixe"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.peixe.png" alt="Sopa de Peixe"></td>
                         <td>Sopa de Peixe</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/concha.png" alt="Concha"> Concha (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Mais de 3 corações com o Willy</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="guisado.de.peixe"></td>
+                        <td><input type="checkbox" class="task" id="guisado.de.peixe"></td>
                         <td><img class="principal" src="src/imagens/receitas/guisado.de.peixe.png" alt="Guisado de Peixe"></td>
                         <td>Guisado de Peixe</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/lagostim.png" alt="Lagostim"> Lagostim (1)<br><img class="ingrediente" src="src/imagens/peixes/mexilhao.png" alt="Mexilhão"> Mexilhão (1)<br><img class="ingrediente" src="src/imagens/peixes/caramujo.png" alt="Caramujo"> Caramujo (1)<br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1)</td>
                         <td>Mais de 7 corações com o Willy</td>
                     </tr>
                     <tr data-estacao="primavera">
-                        <td><input type="checkbox" id="escargo"></td>
+                        <td><input type="checkbox" class="task" id="escargo"></td>
                         <td><img class="principal" src="src/imagens/receitas/escargo.png" alt="Escargô"></td>
                         <td>Escargô</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/lesma.png" alt="Lesma"> Lesma (1)<br><img class="ingrediente" src="src/imagens/colecao/alho.png" alt="Alho"> Alho (1)</td>
                         <td>Mais de 5 corações com o Willy</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="bisque.de.lagosta"></td>
+                        <td><input type="checkbox" class="task" id="bisque.de.lagosta"></td>
                         <td><img class="principal" src="src/imagens/receitas/bisque.de.lagosta.png" alt="Bisque de Lagosta"></td>
                         <td>Bisque de Lagosta</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/lagosta.png" alt="Lagosta"> Lagosta (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)</td>
                         <td>Mais de 9 corações com o Willy ou Programa "Rainha do Molho", 14 do Inverno, Ano 2</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="pao.de.acer"></td>
+                        <td><input type="checkbox" class="task" id="pao.de.acer"></td>
                         <td><img class="principal" src="src/imagens/receitas/pao.de.acer.png" alt="Pão de Ácer"></td>
                         <td>Pão de Ácer</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/xarope.de.acer.png" alt="Xarope de Ácer"> Xarope de Ácer (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)</td>
                         <td>Programa "Rainha do Molho", 14 do Verão, Ano 2</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="bolinhos.de.caranguejo"></td>
+                        <td><input type="checkbox" class="task" id="bolinhos.de.caranguejo"></td>
                         <td><img class="principal" src="src/imagens/receitas/bolinhos.de.caranguejo.png" alt="Bolinhos de Caranguejo"></td>
                         <td>Bolinhos de Caranquejo</td>
                         <td><img class="ingrediente" src="src/imagens/peixes/caranguejo.png" alt="Caranguejo"> Caranguejo (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/ovo.png" alt="Ovo"> Ovo (1)<br><img class="ingrediente" src="src/imagens/colecao/oleo.png" alt="Óleo"> Óleo (1)</td>
                         <td>Programa "Rainha do Molho", 21 do Outono, Ano 2</td>
                     </tr>
                     <tr data-estacao="primavera verao">
-                        <td><input type="checkbox" id="coquetel.de.camarao"></td>
+                        <td><input type="checkbox" class="task" id="coquetel.de.camarao"></td>
                         <td><img class="principal" src="src/imagens/receitas/coquetel.de.camarao.png" alt="Coquetel de Camarão"></td>
                         <td>Coquetel de Camarão</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1) <em>*verão*</em><br><img class="ingrediente" src="src/imagens/peixes/camarao.png" alt="Camarão"> Camarão (1)<br><img class="ingrediente" src="src/imagens/colecao/raiz.forte.png" alt="Raiz Forte"> Raiz-forte (1) <em>*primavera*</em></td>
                         <td>Programa "Rainha do Molho", 28 do Inverno, Ano 2</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="ginger.ale"></td>
+                        <td><input type="checkbox" class="task" id="ginger.ale"></td>
                         <td><img class="principal" src="src/imagens/receitas/ginger.ale.png" alt="Ginger Ale"></td>
                         <td>Ginger Ale</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/gengibre.png" alt="Gengibre"> Gengibre (3)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Loja Caverna do Vulcão por 1 000 ouros</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="pudim.de.banana"></td>
+                        <td><input type="checkbox" class="task" id="pudim.de.banana"></td>
                         <td><img class="principal" src="src/imagens/receitas/pudim.de.banana.png" alt="Pudim de Banana"></td>
                         <td>Pudim de Banana</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/banana.png" alt="Banana"> Banana (1)<br><img class="ingrediente" src="src/imagens/colecao/leite.png" alt="Leite"> Leite (1)<br><img class="ingrediente" src="src/imagens/colecao/acucar.png" alt="Açúcar"> Açúcar (1)</td>
                         <td>Comerciante da Ilha por 30 Fragmentos de Ossos</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="arroz.doce.de.manga"></td>
+                        <td><input type="checkbox" class="task" id="arroz.doce.de.manga"></td>
                         <td><img class="principal" src="src/imagens/receitas/arroz.doce.de.manga.png" alt="Arroz Doce de Manga"></td>
                         <td>Arroz Doce de Manga</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/manga.png" alt="Manga"> Manga (1)<br><img class="ingrediente" src="src/imagens/colecao/coco.png" alt="Coco"> Coco (1)<br><img class="ingrediente" src="src/imagens/colecao/arroz.png" alt="Arroz"> Arroz (1)</td>
                         <td>Mais de 7 corações com o Leo</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="poi"></td>
+                        <td><input type="checkbox" class="task" id="poi"></td>
                         <td><img class="principal" src="src/imagens/receitas/poi.png" alt="Poi"></td>
                         <td>Poi</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/inhame-coco.png" alt="Inhame-coco"> Inhame-coco (4)</td>
                         <td>Mais de 3 corações com o Leo</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="curry.tropical"></td>
+                        <td><input type="checkbox" class="task" id="curry.tropical"></td>
                         <td><img class="principal" src="src/imagens/receitas/curry.tropical.png" alt="Curry Tropical"></td>
                         <td>Curry Tropical</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/coco.png" alt="Coco"> Coco (1)<br><img class="ingrediente" src="src/imagens/colecao/abacaxi.png" alt="Abacaxi"> Abacaxi (1)<br><img class="ingrediente" src="src/imagens/colecao/pimenta.png" alt="Pimenta"> Pimenta (1)</td>
                         <td>Resort da Praia por 2 000 ouros</td>
                     </tr>
                     <tr data-estacao="verao">
-                        <td><input type="checkbox" id="ravioli.de.tinta.de.lula"></td>
+                        <td><input type="checkbox" class="task" id="ravioli.de.tinta.de.lula"></td>
                         <td><img class="principal" src="src/imagens/receitas/ravioli.de.tinta.de.lula.png" alt="Ravioli de Tinta de Lula"></td>
                         <td>Ravioli de Tinta de Lula</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/tinta.de.lula.png" alt="Tinta de Lula"> Tinta de Lula (1)<br><img class="ingrediente" src="src/imagens/colecao/farinha.de.trigo.png" alt="Farinha de Trigo"> Farinha de Trigo (1)<br><img class="ingrediente" src="src/imagens/colecao/tomate.png" alt="Tomate"> Tomate (1)</td>
                         <td>Habilidade Combate Nível 9</td>
                     </tr>
                     <tr data-estacao="qualquer">
-                        <td><input type="checkbox" id="sopa.de.musgo"></td>
+                        <td><input type="checkbox" class="task" id="sopa.de.musgo"></td>
                         <td><img class="principal" src="src/imagens/receitas/sopa.de.musgo.png" alt="Sopa de Musgo"></td>
                         <td>Sopa de Musgo</td>
                         <td><img class="ingrediente" src="src/imagens/colecao/musgo.png" alt="Musgo"> Musgo (20)</td>
@@ -630,7 +633,7 @@
                             <th><button class="toggle-all">&#x2714</button></th>
                             <th>Imagem</th>
                             <th>Peixe</th>
-                            <th>Local</th>
+                            <th class="local-peixe">Local</th>
                             <th>Hora</th>
                             <th>Estação</th>
                             <th>Clima</th>
@@ -638,7 +641,7 @@
                         </thead>
                         <tbody>
                         <tr data-estacao="verao">
-                            <td><input type="checkbox" id="baiacu"></td>
+                            <td><input type="checkbox" class="task" id="baiacu"></td>
                             <td><img class="principal" src="src/imagens/peixes/baiacu.png" alt="Baiacu"></td>
                             <td>Baiacu</td>
                             <td>Oceano</td>
@@ -647,7 +650,7 @@
                             <td>Ensolarado</td>
                         </tr>
                         <tr data-estacao="primavera outono">
-                            <td><input type="checkbox" id="anchova"></td>
+                            <td><input type="checkbox" class="task" id="anchova"></td>
                             <td><img class="principal" src="src/imagens/peixes/anchova.png" alt="Anchova"></td>
                             <td>Anchova</td>
                             <td>Oceano</td>
@@ -656,7 +659,7 @@
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="verao inverno">
-                            <td><input type="checkbox" id="atum"></td>
+                            <td><input type="checkbox" class="task" id="atum"></td>
                             <td><img class="principal" src="src/imagens/peixes/atum.png" alt="Atum"></td>
                             <td>Atum</td>
                             <td>Oceano</td>
@@ -665,7 +668,7 @@
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="primavera outono inverno">
-                            <td><input type="checkbox" id="sardinha"></td>
+                            <td><input type="checkbox" class="task" id="sardinha"></td>
                             <td><img class="principal" src="src/imagens/peixes/sardinha.png" alt="Sardinha"></td>
                             <td>Sardinha</td>
                             <td>Oceano</td>
@@ -674,16 +677,16 @@
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="qualquer">
-                            <td><input type="checkbox" id="brema"></td>
+                            <td><input type="checkbox" class="task" id="brema"></td>
                             <td><img class="principal" src="src/imagens/peixes/brema.png" alt="Brema"></td>
                             <td>Brema</td>
-                            <td>Rio (Cidade + Floresta)</td>
+                            <td>Rio (Cidade+Floresta)</td>
                             <td>18:00 - 02:00</td>
                             <td>Todas as Estações</td>
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="qualquer">
-                            <td><input type="checkbox" id="achiga"></td>
+                            <td><input type="checkbox" class="task" id="achiga"></td>
                             <td><img class="principal" src="src/imagens/peixes/achiga.png" alt="Achigã"></td>
                             <td>Achigã</td>
                             <td>Lago da Montanha</td>
@@ -692,40 +695,121 @@
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="primavera outono">
-                            <td><input type="checkbox" id="achiga.pequeno"></td>
+                            <td><input type="checkbox" class="task" id="achiga.pequeno"></td>
                             <td><img class="principal" src="src/imagens/peixes/achiga.pequeno.png" alt="Achigã-pequeno"></td>
                             <td>Achigã-pequeno</td>
-                            <td>Rio (Cidade)<br>Lago (Floresta)</td>
+                            <td>Rio (Cidade)<br>Lago da Floresta</td>
                             <td>Qualquer</td>
                             <td>Primavera e Outono</td>
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="verao">
-                            <td><input type="checkbox" id="truta.arco.iris"></td>
+                            <td><input type="checkbox" class="task" id="truta.arco.iris"></td>
                             <td><img class="principal" src="src/imagens/peixes/truta.arco.iris.png" alt="Truta Arco-íris"></td>
                             <td>Truta Arco-Íris</td>
-                            <td>Rio (Cidade + Floresta)<br>Lago (Montanha)</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Montanha</td>
                             <td>06:00 - 19:00</td>
                             <td>Verão</td>
                             <td>Ensolarado</td>
                         </tr>
                         <tr data-estacao="outono">
-                            <td><input type="checkbox" id="salmao"></td>
+                            <td><input type="checkbox" class="task" id="salmao"></td>
                             <td><img class="principal" src="src/imagens/peixes/salmon.png" alt="Salmão"></td>
                             <td>Salmão</td>
-                            <td>Rio (Cidade + Floresta)</td>
+                            <td>Rio (Cidade+Floresta)</td>
                             <td>06:00 - 19:00</td>
                             <td>Outono</td>
                             <td>Qualquer</td>
                         </tr>
                         <tr data-estacao="outono inverno">
-                            <td><input type="checkbox" id="picao.verde"></td>
+                            <td><input type="checkbox" class="task" id="picao.verde"></td>
                             <td><img class="principal" src="src/imagens/peixes/picao.verde.png" alt="Picão-verde"></td>
                             <td>Picão-verde</td>
-                            <td>Rio (Cidade + Floresta)<br>Lago da Floresta</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta</td>
                             <td>12:00 - 02:00</td>
-                            <td>Outono e Inverno (com Totem de Chuva)</td>
+                            <td>Outono<br>Inverno <em>*com Totem de Chuva*</em></td>
                             <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="perca"></td>
+                            <td><img class="principal" src="src/imagens/peixes/perca.png" alt="Perca"></td>
+                            <td>Perca</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta<br>Lago da Montanha</td>
+                            <td>Qualquer</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="carpa"></td>
+                            <td><img class="principal" src="src/imagens/peixes/carpa.png" alt="Carpa"></td>
+                            <td>Carpa</td>
+                            <td>Lago da Montanha<br>Lagoa do Bosque Secreto<br>Os Esgotos</td>
+                            <td>Qualquer</td>
+                            <td>Todas Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="pimavera verao outono">
+                            <td><input type="checkbox" class="task" id="bagre"></td>
+                            <td><img class="principal" src="src/imagens/peixes/bagre.png" alt="Bagre"></td>
+                            <td>Bagre</td>
+                            <td>Rio (Cidade+Floresta)<br>Lagoa do Bosque Secreto<br>Pântano da Bruxa</td>
+                            <td>06:00 - 00:00</td>
+                            <td>Primavera<br>Verão <em>*Lago do Bosque Secreto*</em><br>Outono</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="lucio"></td>
+                            <td><img class="principal" src="src/imagens/peixes/lucio.png" alt="Lúcio"></td>
+                            <td>Lúcio</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta</td>
+                            <td>Qualquer</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao">
+                            <td><input type="checkbox" class="task" id="peixe.sol"></td>
+                            <td><img class="principal" src="src/imagens/peixes/peixe.sol.png" alt="Peixe-sol"></td>
+                            <td>Peixe-sol</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Primavera e Verão</td>
+                            <td>Ensolarado ou Ventando</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="salmonete"></td>
+                            <td><img class="principal" src="src/imagens/peixes/salmonete.png" alt="Salmonete"></td>
+                            <td>Salmonete</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera inverno">
+                            <td><input type="checkbox" class="task" id="arenque"></td>
+                            <td><img class="principal" src="src/imagens/peixes/arenque.png" alt="Arenque"></td>
+                            <td>Arenque</td>
+                            <td>Oceano</td>
+                            <td>Qualquer</td>
+                            <td>Primavera e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera outono">
+                            <td><input type="checkbox" class="task" id="enguia"></td>
+                            <td><img class="principal" src="src/imagens/peixes/enguia.png" alt="Enguia"></td>
+                            <td>Enguia</td>
+                            <td>Oceano</td>
+                            <td>16:00 - 02:00</td>
+                            <td>Primavera e Outono</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="polvo"></td>
+                            <td><img class="principal" src="src/imagens/peixes/polvo.png" alt="Polvo"></td>
+                            <td>Polvo</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 13:00</td>
+                            <td>Verão</td>
+                            <td>Qualquer</td>
                         </tr>
                     </tbody>
                 </table>
