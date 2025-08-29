@@ -119,23 +119,35 @@ nav a:hover{
   background-color: #d1782a;
 }
 
+.junimo{
+  width: 40px;
+  height: 40px;
+  background-image: url("../imagens/gif/junimoprogressbar.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 28px;
+  transition: left 1.2s ease-out;
+}
+
 .progress-container {
+  position: relative; /* ADIOCIONADO PARA O JUNIMO */
   width: 95%;
   height: 25px;
-  background: #ccc;
+  background: white;
   border-radius: 12px;
   border: 2px solid #953b0a;
   overflow: hidden;
   margin: auto;
-  margin-top: 30px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
 }
 
 #progress-bar {
   height: 100%;
   width: 0%;
-  background: #8b5a2b; /* verde */
-  transition: width 0.3s ease;
+  background: #3fbd3f;
+  transition: width 1.2s ease-out;
 }
 
 /* Estilo base: mobile-first */
