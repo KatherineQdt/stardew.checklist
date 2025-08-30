@@ -45,10 +45,19 @@ header > img{
 header > h1{
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: "Tiny5", sans-serif;
   font-weight: 400;
   font-size: 2em;
+  color: #ddd;
+}
+
+header h2{
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
   color: #ddd;
 }
 
@@ -126,9 +135,14 @@ nav a:hover{
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 30px;
   margin-left: 28px;
   transition: left 1.2s ease-out;
+}
+
+@media (max-width: 600px){
+  .junimo{
+    margin-left: 14px;
+  }
 }
 
 .progress-container {
@@ -201,6 +215,16 @@ main{
 @media (max-width: 600px){
   main{
     padding: 10px 0px;
+  }
+}
+
+.titulo{
+  h1{
+    font-size: 3em;
+    text-align: center;
+    text-indent: 0px;
+    margin-top: 30px;
+    margin-bottom: -5px;
   }
 }
 
@@ -288,6 +312,10 @@ main h1{
   margin-bottom: 20px;
 }
 
+.segundo{
+  margin-top: 15px;
+}
+
 .caixa{
   background-color: #e68938;
   border: 2px solid #953b0a;
@@ -311,6 +339,7 @@ main h1{
   align-items: center;
   padding: 0px 10px 0px 3px;
   margin-bottom: -10px;
+  text-indent: 15px;
 }
 
 .esconde {
@@ -427,6 +456,10 @@ img.principal {
 img.ingrediente {
   width: 32px;
   height: 32px;
+}
+
+.hora{
+  min-width: 130px;
 }
 
 em{

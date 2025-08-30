@@ -25,6 +25,14 @@ function updateProgress() {
   progressBar.style.width = percent + "%";
   //progressBar.innerText = Math.round(percent) + "%";
 
+  // mover junimo
+  const junimo = document.querySelector('.junimo');
+  const containerWidth = document.querySelector('.progress-container').offsetWidth;
+  const junimoWidth = junimo.offsetWidth;
+  const posicao = (containerWidth - junimoWidth) * (percent / 100);
+
+  junimo.style.left = posicao + "px";
+
   // Salvar progresso
   localStorage.setItem("progress", percent);
 
@@ -46,6 +54,14 @@ function restoreState() {
   if (savedProgress) {
     progressBar.style.width = savedProgress + "%";
     //progressBar.innerText = Math.round(savedProgress) + "%";
+
+    // restaurar posição do junimo
+    const junimo = document.querySelector('.junimo');
+    const containerWidth = document.querySelector('.progress-container').offsetWidth;
+    const junimoWidth = junimo.offsetWidth;
+    const posicao = (containerWidth - junimoWidth) * (savedProgress / 100);
+    junimo.style.left = posicao + "px";
+
   } else {
     updateProgress(); // recalcula se não tem salvo
   }
