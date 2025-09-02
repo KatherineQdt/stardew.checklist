@@ -30,7 +30,7 @@ body {
   color: #333;
 }
 
-header > img{
+header img{
   display: block;
   margin: auto;
   max-width: 350px;
@@ -116,7 +116,7 @@ nav a{
   margin-left: 15px;
   font-family:"Oxanium", sans-serif;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #333;
   text-decoration: none;
   transition-duration: 0.5s;
@@ -304,6 +304,15 @@ main{
   }
 }
 
+#todas {
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+#todas:active {
+  transform: scale(0.95); /* dá sensação de botão sendo pressionado */
+  background-color: #fcbb98; 
+}
+
 main h1{
   font-family: 'pixel', Arial, Helvetica, sans-serif;
   text-indent: 10px;
@@ -423,6 +432,7 @@ td {
   padding: 10px;
   /*border-bottom: 1px solid #c9a66b; /* marrom claro */
   vertical-align: middle;
+  line-height: 1.5;
 }
 
 /* Checkbox centralizado */

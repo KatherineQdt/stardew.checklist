@@ -59,15 +59,14 @@ botoes.forEach(botao => {
 });
 
 showAllButton.addEventListener("click", () => {
-  if (showAllButton.classList.contains("active")) {
-    showAllButton.classList.remove("active");
-    receitas.forEach(r => (r.style.display = ""));
-    return;
-  }
+  // remove estado ativo de todos os botões
   botoes.forEach(btn => btn.classList.remove("active"));
-  showAllButton.classList.add("active");
+  showAllButton.classList.remove("active"); // garante que ele nunca fique ativo
+
+  // mostra todas as receitas
   receitas.forEach(r => (r.style.display = ""));
 });
+
 
 toggle.addEventListener("click", () => links.classList.toggle("active"));
 

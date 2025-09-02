@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="src/imagens/logo.png" alt="Stardew Valley" class="titulo">
+        <a href="index.html" target="_self" rel="prev"><img src="src/imagens/logo.png" alt="Stardew Valley" class="titulo"></a>
         <h1>Checklist para a Perfeição</h1>
         <p>**SITE EM DESENVOLVIMENTO**</p>
     </header>
@@ -19,7 +19,8 @@
             <div class="menu-toggle"><img src="src/imagens/icon.png" alt="Menu"></div>
             <div class="menu-links">
                 <a href="#">Home</a>
-                <a href="#">Coleção</a>
+                <a href="#">Itens</a>
+                <a href="#">Construção</a>
                 <a href="#">Monstros</a>
                 <a href="#">Amigos</a>
                 <a href="#">Frutas-Estrelas</a>
@@ -40,6 +41,139 @@
             <button data-estacao="inverno">&#x2744 Inverno</button>
             <button data-estacao="qualquer">&#x1F308 Todas as Estações</button>
             <button id="todas">&#x26F0 Todos os Itens</button>
+        </div>
+        <div class="caixa">
+            <div class="caixa-header">
+                <h1>Itens Enviados</h1>
+                <button class="esconde"></button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th><button class="toggle-all">&#x2714</button></th>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Origem</th>
+                        <th>Estação</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="raiz.forte"></td>
+                        <td><img class="principal" src="src/imagens/colecao/raiz.forte.png" alt="Raiz Forte"></td>
+                        <td>Raiz Forte</td>
+                        <td>Coleta</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="narciso"></td>
+                        <td><img class="principal" src="src/imagens/colecao/narciso.png" alt="Narciso"></td>
+                        <td>Narciso</td>
+                        <td>Coleta</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="alho.poro"></td>
+                        <td><img class="principal" src="src/imagens/colecao/alho.poro.png" alt="Alho Poró"></td>
+                        <td>Alho Poró</td>
+                        <td>Coleta</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="dente.de.leao"></td>
+                        <td><img class="principal" src="src/imagens/colecao/dente.de.leao.png" alt="Dente-de-leão"></td>
+                        <td>Dente-de-leão</td>
+                        <td>Coleta</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="chirivia"></td>
+                        <td><img class="principal" src="src/imagens/colecao/chirivia.png" alt="Chirívia"></td>
+                        <td>Chirívia</td>
+                        <td>Plantio</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="cenoura.subterranea"></td>
+                        <td><img class="principal" src="src/imagens/colecao/cenoura.subterrania.png" alt="Cenoura Subterrânea"></td>
+                        <td>Cenoura Subterrânea</td>
+                        <td>Minas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="coco"></td>
+                        <td><img class="principal" src="src/imagens/colecao/coco.png" alt="Coco"></td>
+                        <td>Coco</td>
+                        <td>O Deserto e Ilha Gengibre</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="fruto.do.cacto"></td>
+                        <td><img class="principal" src="src/imagens/colecao/fruto.do.cacto.png" alt="Fruto do Cacto"></td>
+                        <td>Fruto do Cacto</td>
+                        <td>O Deserto e Plantio</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="banana"></td>
+                        <td><img class="principal" src="src/imagens/colecao/banana.png" alt="Banana"></td>
+                        <td>Banana</td>
+                        <td>Verão <em>*Plantado na Fazenda*</em></td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="seiva"></td>
+                        <td><img class="principal" src="src/imagens/colecao/seiva.png" alt="Seiva"></td>
+                        <td>Seiva</td>
+                        <td>Cortando árvores, Gosmas e <br>Torneirinha em Árvores de Mogno</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="ovo.grande.branco"></td>
+                        <td><img class="principal" src="src/imagens/colecao/ovo.grande.branco.png" alt="Ovo Grande (Branco)"></td>
+                        <td>Ovo Grande (Branco)</td>
+                        <td>Galinhas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="ovo.branco"></td>
+                        <td><img class="principal" src="src/imagens/colecao/ovo.png" alt="Ovo (Branco)"></td>
+                        <td>Ovo (Branco)</td>
+                        <td>Galinhas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="ovo.marrom"></td>
+                        <td><img class="principal" src="src/imagens/colecao/ovo.marrom.png" alt="Ovo (Marrom)"></td>
+                        <td>Ovo (Marrom)</td>
+                        <td>Galinhas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="ovo.grande.marrom"></td>
+                        <td><img class="principal" src="src/imagens/colecao/ovo.grande.marrom.png" alt="Ovo Grande (Marrom)"></td>
+                        <td>Ovo Grande (Marrom)</td>
+                        <td>Galinhas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="leite"></td>
+                        <td><img class="principal" src="src/imagens/colecao/leite.png" alt="Leite"></td>
+                        <td>Leite</td>
+                        <td>Vacas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="leite.grande"></td>
+                        <td><img class="principal" src="src/imagens/colecao/leite.grande.png" alt="Leite Grande"></td>
+                        <td>Leite Grande</td>
+                        <td>Vacas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="caixa">
             <div class="caixa-header">
@@ -1141,6 +1275,60 @@
                             <td><img class="principal" src="src/imagens/peixes/carpa.mutante.png" alt="Carpa Mutante"></td>
                             <td>Carpa Mutante</td>
                             <td>Os Esgotos</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.marinhas"></td>
+                            <td><img class="principal" src="src/imagens/peixes/algas.marinhas.png" alt="Algas Marinhas"></td>
+                            <td>Algas Marinhas</td>
+                            <td>Oceano</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.verdes"></td>
+                            <td><img class="principal" src="src/imagens/peixes/alga.verde.png" alt="Algas Verdes"></td>
+                            <td>Algas Verdes</td>
+                            <td>Rios e Lagos</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.brancas"></td>
+                            <td><img class="principal" src="src/imagens/peixes/algas.brancas.png" alt="Algas Brancas"></td>
+                            <td>Algas Brancas</td>
+                            <td>Minas, Esgoto, Covil dos Insetos Mutantes e Cabana da Bruxa</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.do.mar"></td>
+                            <td><img class="principal" src="src/imagens/peixes/galeia.do.mar.png" alt="Geléia do Mar"></td>
+                            <td>Geléia do Mar</td>
+                            <td>Oecano</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.do.rio"></td>
+                            <td><img class="principal" src="src/imagens/peixes/geleia.do.rio.png" alt="Geléia do Rio"></td>
+                            <td>Geléia do Rio</td>
+                            <td>Rios e Lagoas</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.da.caverna"></td>
+                            <td><img class="principal" src="src/imagens/peixes/geleia.da.caverna.png" alt="Geléia da Caverna"></td>
+                            <td>Geléia da Caverna</td>
+                            <td>Mina (20º, 60º e 100º)</td>
                             <td>Qualquer</td>
                             <td>Todas as Estações</td>
                             <td>Qualquer</td>
