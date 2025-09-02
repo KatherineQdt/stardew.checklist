@@ -95,5 +95,17 @@ document.querySelectorAll(".esconde").forEach(btn => {
   btn.style.backgroundImage = "url('src/imagens/cima.png')";
 });
 
+document.querySelectorAll(".esconde2").forEach(btn => {
+  btn.textContent = "";
+  btn.addEventListener("click", () => {
+    const caixa = btn.closest(".caixa");
+    caixa.classList.toggle("collapsed");
+    btn.style.backgroundImage = caixa.classList.contains("collapsed")
+      ? "url('../imagens/baixo.png')"
+      : "url('../imagens/cima.png')";
+  });
+  btn.style.backgroundImage = "url('../imagens/cima.png')";
+});
+
 // ==================== Inicialização ====================
 restoreState();

@@ -351,7 +351,7 @@ main h1{
   text-indent: 15px;
 }
 
-.esconde {
+.esconde, .esconde2 {
   margin-bottom: 10px;
   width: 52px;             /* tamanho do botão */
   height: 52px;

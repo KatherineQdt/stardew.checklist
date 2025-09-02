@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixes</title>
+    <link rel="shortcut icon" href="../imagens/peixe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" target="_self" rel="prev"><img src="../imagens/logo.png" alt="Stardew Valley" class="titulo"></a>
+        <h1>Checklist para a Perfeição</h1>
+        <p>**SITE EM DESENVOLVIMENTO**</p>
+    </header>
+    <main>
+        <nav>
+            <div class="menu-toggle"><img src="../imagens/icon.png" alt="Menu"></div>
+            <div class="menu-links">
+                <a href="../../index.html" target="_self" rel="prev">Home</a>
+                <a href="itens.html">Itens</a>
+                <a href="#">Construção</a>
+                <a href="#">Monstros</a>
+                <a href="#">Amigos</a>
+                <a href="#">Frutas-Estrelas</a>
+                <a href="culinaria.html">Culinária</a>
+                <a href="#">Fabricação</a>
+                <a href="peixes.html">Peixes</a>
+                <a href="#">Nozes Douradas</a>
+            </div>
+        </nav>
+        <div class="titulo">
+            <h1>Peixes</h1>
+        </div>
+        <div class="button">
+            <button data-estacao="primavera">&#x1F338 Primavera</button>
+            <button data-estacao="verao">&#x1F31E Verão</button>
+            <button data-estacao="outono">&#x1F342 Outono</button>
+            <button data-estacao="inverno">&#x2744 Inverno</button>
+            <button data-estacao="qualquer">&#x1F308 Todas as Estações</button>
+            <button id="todas">&#x26F0 Todos os Itens</button>
+        </div>
+        <div class="caixa">
+            <div class="caixa-header">
+                <h1>Peixes</h1>
+                <button class="esconde2"></button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><button class="toggle-all">&#x2714</button></th>
+                            <th>Imagem</th>
+                            <th>Peixe</th>
+                            <th>Local</th>
+                            <th  class="hora">Hora</th>
+                            <th>Estação</th>
+                            <th>Clima</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="baiacu"></td>
+                            <td><img class="principal" src="../imagens/peixes/baiacu.png" alt="Baiacu"></td>
+                            <td>Baiacu</td>
+                            <td>Oceano</td>
+                            <td>12:00 - 16:00</td>
+                            <td>Verão</td>
+                            <td>Ensolarado</td>
+                        </tr>
+                        <tr data-estacao="primavera outono">
+                            <td><input type="checkbox" class="task" id="anchova"></td>
+                            <td><img class="principal" src="../imagens/peixes/anchova.png" alt="Anchova"></td>
+                            <td>Anchova</td>
+                            <td>Oceano</td>
+                            <td>Qualquer</td>
+                            <td>Primavera e Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="atum"></td>
+                            <td><img class="principal" src="../imagens/peixes/atum.png" alt="Atum"></td>
+                            <td>Atum</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera outono inverno">
+                            <td><input type="checkbox" class="task" id="sardinha"></td>
+                            <td><img class="principal" src="../imagens/peixes/sardinha.png" alt="Sardinha"></td>
+                            <td>Sardinha</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Primavera, Outono e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="brema"></td>
+                            <td><img class="principal" src="../imagens/peixes/brema.png" alt="Brema"></td>
+                            <td>Brema</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>18:00 - 02:00</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="achiga"></td>
+                            <td><img class="principal" src="../imagens/peixes/achiga.png" alt="Achigã"></td>
+                            <td>Achigã</td>
+                            <td>Lago da Montanha</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera outono">
+                            <td><input type="checkbox" class="task" id="achiga.pequeno"></td>
+                            <td><img class="principal" src="../imagens/peixes/achiga.pequeno.png" alt="Achigã-pequeno"></td>
+                            <td>Achigã-pequeno</td>
+                            <td>Rio (Cidade)<br>Lago da Floresta</td>
+                            <td>Qualquer</td>
+                            <td>Primavera e Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="truta.arco.iris"></td>
+                            <td><img class="principal" src="../imagens/peixes/truta.arco.iris.png" alt="Truta Arco-íris"></td>
+                            <td>Truta Arco-Íris</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Montanha</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão</td>
+                            <td>Ensolarado</td>
+                        </tr>
+                        <tr data-estacao="outono">
+                            <td><input type="checkbox" class="task" id="salmao"></td>
+                            <td><img class="principal" src="../imagens/peixes/salmon.png" alt="Salmão"></td>
+                            <td>Salmão</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono inverno">
+                            <td><input type="checkbox" class="task" id="picao.verde"></td>
+                            <td><img class="principal" src="../imagens/peixes/picao.verde.png" alt="Picão-verde"></td>
+                            <td>Picão-verde</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta</td>
+                            <td>12:00 - 02:00</td>
+                            <td>Outono<br>Inverno <em>*com Totem de Chuva*</em></td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="perca"></td>
+                            <td><img class="principal" src="../imagens/peixes/perca.png" alt="Perca"></td>
+                            <td>Perca</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta<br>Lago da Montanha</td>
+                            <td>Qualquer</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="carpa"></td>
+                            <td><img class="principal" src="../imagens/peixes/carpa.png" alt="Carpa"></td>
+                            <td>Carpa</td>
+                            <td>Lago da Montanha<br>Lagoa do Bosque Secreto<br>Os Esgotos</td>
+                            <td>Qualquer</td>
+                            <td>Todas Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao outono">
+                            <td><input type="checkbox" class="task" id="bagre"></td>
+                            <td><img class="principal" src="../imagens/peixes/bagre.png" alt="Bagre"></td>
+                            <td>Bagre</td>
+                            <td>Rio (Cidade+Floresta)<br>Lagoa do Bosque Secreto<br>Pântano da Bruxa</td>
+                            <td>06:00 - 00:00</td>
+                            <td>Primavera<br>Verão <em>*Lago do Bosque Secreto*</em><br>Outono</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="lucio"></td>
+                            <td><img class="principal" src="../imagens/peixes/lucio.png" alt="Lúcio"></td>
+                            <td>Lúcio</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Floresta</td>
+                            <td>Qualquer</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao">
+                            <td><input type="checkbox" class="task" id="peixe.sol"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.sol.png" alt="Peixe-sol"></td>
+                            <td>Peixe-sol</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Primavera e Verão</td>
+                            <td>Ensolarado ou Ventando</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="salmonete"></td>
+                            <td><img class="principal" src="../imagens/peixes/salmonete.png" alt="Salmonete"></td>
+                            <td>Salmonete</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera inverno">
+                            <td><input type="checkbox" class="task" id="arenque"></td>
+                            <td><img class="principal" src="../imagens/peixes/arenque.png" alt="Arenque"></td>
+                            <td>Arenque</td>
+                            <td>Oceano</td>
+                            <td>Qualquer</td>
+                            <td>Primavera e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera outono">
+                            <td><input type="checkbox" class="task" id="enguia"></td>
+                            <td><img class="principal" src="../imagens/peixes/enguia.png" alt="Enguia"></td>
+                            <td>Enguia</td>
+                            <td>Oceano</td>
+                            <td>16:00 - 02:00</td>
+                            <td>Primavera e Outono</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="polvo"></td>
+                            <td><img class="principal" src="../imagens/peixes/polvo.png" alt="Polvo"></td>
+                            <td>Polvo</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 13:00</td>
+                            <td>Verão</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao outono inverno">
+                            <td><input type="checkbox" class="task" id="cioba"></td>
+                            <td><img class="principal" src="../imagens/peixes/cioba.png" alt="Cioba"></td>
+                            <td>Cioba</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão, Outono e Inverno</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="lula"></td>
+                            <td><img class="principal" src="../imagens/peixes/lula.png" alt="Lula"></td>
+                            <td>Lula</td>
+                            <td>Oceano</td>
+                            <td>18:00 - 08:00</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono inverno">
+                            <td><input type="checkbox" class="task" id="pepino.do.mar"></td>
+                            <td><img class="principal" src="../imagens/peixes/pepino.do.mar.png" alt="Pepino-do-mar"></td>
+                            <td>Pepino-do-mar</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Outono e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao outono">
+                            <td><input type="checkbox" class="task" id="superpepino"></td>
+                            <td><img class="principal" src="../imagens/peixes/super.pepino.png" alt="Superpepino"></td>
+                            <td>Superpepino</td>
+                            <td>Oceano<br>Oceano da Ilha Gengibre</td>
+                            <td>18:00 - 02:00</td>
+                            <td>Verão e Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="peixe.fantasma"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.fantasma.png" alt="Peixe-fantasma"></td>
+                            <td>Peixe-fantasma</td>
+                            <td>Mina (20º, 60º andar)<br>Expólio de Fantasmas</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="peixe.pedra"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.pedra.png" alt="Peixe-pedra"></td>
+                            <td>Peixe-pedra</td>
+                            <td>Mina (20º andar)</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="chione"></td>
+                            <td><img class="principal" src="../imagens/peixes/chione.png" alt="Chione"></td>
+                            <td>Chione</td>
+                            <td>Mina (60º andar)</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="enguia.de.lava"></td>
+                            <td><img class="principal" src="../imagens/peixes/enguia.de.lava.png" alt="Enguia de Lava"></td>
+                            <td>Enguia de Lava</td>
+                            <td>Mina (100º andar)</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="areinha"></td>
+                            <td><img class="principal" src="../imagens/peixes/areinha.png" alt="Areinha"></td>
+                            <td>Areinha</td>
+                            <td>O Deserto</td>
+                            <td>06:00 - 20:00</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="carpa.escorpionica"></td>
+                            <td><img class="principal" src="../imagens/peixes/carpa.escorpionica.png" alt="Carpa Escorpiônica"></td>
+                            <td>Carpa Escorpiônica</td>
+                            <td>O Deserto <em>*requer pesca nível 4*</em></td>
+                            <td>06:00 - 20:00</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao">
+                            <td><input type="checkbox" class="task" id="linguado"></td>
+                            <td><img class="principal" src="../imagens/peixes/linguado.png" alt="Linguado"></td>
+                            <td>Linguado</td>
+                            <td>Oceano<br>Oceano da Ilha Gengibre</td>
+                            <td>06:00 - 20:00</td>
+                            <td>Primavera e Verão</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono inverno">
+                            <td><input type="checkbox" class="task" id="carpa.da.meia.noite"></td>
+                            <td><img class="principal" src="../imagens/peixes/carpa.da.meia.noie.png" alt="Carpa da meia-noite"></td>
+                            <td>Carpa da Meia-noite</td>
+                            <td>Lago da Montanha<br>Lago da Floresta<br>Lago e Rio da Ilha Gengibre</td>
+                            <td>22:00 - 02:00</td>
+                            <td>Outono e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao inverno">
+                            <td><input type="checkbox" class="task" id="esturjao"></td>
+                            <td><img class="principal" src="../imagens/peixes/esturjao.png" alt="Esturjão"></td>
+                            <td>Esturjão</td>
+                            <td>Lago da Montanha</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono inverno">
+                            <td><input type="checkbox" class="task" id="salmao.hibrido"></td>
+                            <td><img class="principal" src="../imagens/peixes/salmao.hibrido.png" alt="Salmão Híbrido"></td>
+                            <td>Salmão Híbrido</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Outono e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="peixe.gato.cabecudo"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.gato.cabecudo.png" alt="Peixe-gato-cabeçudo"></td>
+                            <td>Peixe-gato-cabeçudo</td>
+                            <td>Lago da Montanha</td>
+                            <td>Qualquer</td>
+                            <td>Todas Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao outono">
+                            <td><input type="checkbox" class="task" id="tilapia"></td>
+                            <td><img class="principal" src="../imagens/peixes/tilapia.png" alt="Tilápia"></td>
+                            <td>Tilápia</td>
+                            <td>Oceano<br>Rios da Ilha Gengibre</td>
+                            <td>06:00 - 14:00</td>
+                            <td>Verão e Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="esqualio"></td>
+                            <td><img class="principal" src="../imagens/peixes/esqualio.png" alt="Esquálio"></td>
+                            <td>Esquálio</td>
+                            <td>Rio (Floresta)<br>Lago da Montanha</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="dourado"></td>
+                            <td><img class="principal" src="../imagens/peixes/dourado.png" alt="Dourado"></td>
+                            <td>Dourado</td>
+                            <td>Rio (Floresta)</td>
+                            <td>06:00 - 19:00</td>
+                            <td>Verão</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono inverno">
+                            <td><input type="checkbox" class="task" id="albacora"></td>
+                            <td><img class="principal" src="../imagens/peixes/albacora.png" alt="Albacora"></td>
+                            <td>Albacora</td>
+                            <td>Oceano</td>
+                            <td>06:00 - 11:00<br>18:00 - 02:00</td>
+                            <td>Outono e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao outono">
+                            <td><input type="checkbox" class="task" id="alocine"></td>
+                            <td><img class="principal" src="../imagens/peixes/alocine.png" alt="Alocine"></td>
+                            <td>Alocine</td>
+                            <td>Rio (Cidade+Floresta)</td>
+                            <td>09:00 - 02:00</td>
+                            <td>Primavera, Verão e Outono</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="ofis"></td>
+                            <td><img class="principal" src="../imagens/peixes/ofis.png" alt="Ófis"></td>
+                            <td>Ófis</td>
+                            <td>Rio (Cidade+Floresta)<br>Lago da Montanha</td>
+                            <td>Qualquer</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera verao inverno">
+                            <td><input type="checkbox" class="task" id="halibute"></td>
+                            <td><img class="principal" src="../imagens/peixes/halibute.png" alt="Halibute"></td>
+                            <td>Halibute</td>
+                            <td>Oceano<br>Lago da Montanha</td>
+                            <td>06:00 - 11:00<br>19:00 - 02:00</td>
+                            <td>Primavera, Verão e Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="madeirao"></td>
+                            <td><img class="principal" src="../imagens/peixes/madeirao.png" alt="Madeirão"></td>
+                            <td>Madeirão</td>
+                            <td>Lago do Bosque Secreto<br>Fazenda na Floresta</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="salmao.nulo"></td>
+                            <td><img class="principal" src="../imagens/peixes/salmao.nulo.png" alt="Salmão Nulo"></td>
+                            <td>Salmão Nulo</td>
+                            <td>Pântano da Bruxa</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="salmao.mutante"></td>
+                            <td><img class="principal" src="../imagens/peixes/salmao.multante.png" alt="Salmão Mutante"></td>
+                            <td>Salmão Mutante</td>
+                            <td>Covil dos Insetos Mutantes</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="peixe.leao"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.leao.png" alt="Peixe Leão"></td>
+                            <td>Peixe-Leão</td>
+                            <td>Oceano Ilha Gengibre</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="acara.disco.azul"></td>
+                            <td><img class="principal" src="../imagens/peixes/acara.disco.azul.png" alt="Acará-disco Azul"></td>
+                            <td>Acará-disco Azul</td>
+                            <td>Lagos e Rios da Ilha Gengibre</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="gobi"></td>
+                            <td><img class="principal" src="../imagens/peixes/gobi.png" alt="Gobi"></td>
+                            <td>Gobi</td>
+                            <td>Cachoeira da Floresta Cinzenta</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="arraia"></td>
+                            <td><img class="principal" src="../imagens/peixes/arraia.png" alt="Arraia"></td>
+                            <td>Arraia</td>
+                            <td>Caverna do Pirata <em>(Ilha Gengibre)</em></td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="lula.da.meia.noite"></td>
+                            <td><img class="principal" src="../imagens/peixes/lula.da.meia.noite.png" alt="Lula da Meia-noite"></td>
+                            <td>Lula da Meia-Noite</td>
+                            <td>Submarino de Pesca <em>(Mercado Noturno)</em></td>
+                            <td>17:00 - 02:00</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="peixe.assustador"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.assustador.png" alt="Peixe Assustador"></td>
+                            <td>Peixe Assustador</td>
+                            <td>Submarino de Pesca <em>(Mercado Noturno)</em></td>
+                            <td>17:00 - 02:00</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="peixe.bolha"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.bolha.png" alt="Peixe-bolha"></td>
+                            <td>Peixe-bolha</td>
+                            <td>Submarino de Pesca <em>(Mercado Noturno)</em></td>
+                            <td>17:00 - 02:00</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="verao">
+                            <td><input type="checkbox" class="task" id="peixe.carmim"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.carmim.png" alt="Peixe-carmim"></td>
+                            <td>Peixe-carmim</td>
+                            <td>Encontrado no pier leste na Praia <em>*requer pesca nível 5*</em></td>
+                            <td>Qualquer</td>
+                            <td>Verão</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="outono">
+                            <td><input type="checkbox" class="task" id="tamboril"></td>
+                            <td><img class="principal" src="../imagens/peixes/tamboril.png" alt="Tamboril"></td>
+                            <td>Tamboril</td>
+                            <td>Ao norte do Mercado Joja na ponte de madeira<em>*requer pesca nível 3*</em></td>
+                            <td>Qualquer</td>
+                            <td>Outono</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="primavera">
+                            <td><input type="checkbox" class="task" id="lenda"></td>
+                            <td><img class="principal" src="../imagens/peixes/lenda.png" alt="Lenda"></td>
+                            <td>Lenda</td>
+                            <td>Encontrado no lago da montanha. Maiores chance de morder perto do tronco no fundo<em>*requer pesca nível 10*</em></td>
+                            <td>Qualquer</td>
+                            <td>Primavera</td>
+                            <td>Chuvoso</td>
+                        </tr>
+                        <tr data-estacao="inverno">
+                            <td><input type="checkbox" class="task" id="peixe.gelo"></td>
+                            <td><img class="principal" src="../imagens/peixes/peixe.gelo.png" alt="Peixe-gelo"></td>
+                            <td>Peixe-gelo</td>
+                            <td>Ao sul da Ilha Cabeça de Flecha na Floresta Cinzaseiva.<em>*requer pesca nível 6*</em></td>
+                            <td>Qualquer</td>
+                            <td>Inverno</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="carpa.mutante"></td>
+                            <td><img class="principal" src="../imagens/peixes/carpa.mutante.png" alt="Carpa Mutante"></td>
+                            <td>Carpa Mutante</td>
+                            <td>Os Esgotos</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.marinhas"></td>
+                            <td><img class="principal" src="../imagens/peixes/algas.marinhas.png" alt="Algas Marinhas"></td>
+                            <td>Algas Marinhas</td>
+                            <td>Oceano</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.verdes"></td>
+                            <td><img class="principal" src="../imagens/peixes/alga.verde.png" alt="Algas Verdes"></td>
+                            <td>Algas Verdes</td>
+                            <td>Rios e Lagos</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="algas.brancas"></td>
+                            <td><img class="principal" src="../imagens/peixes/algas.brancas.png" alt="Algas Brancas"></td>
+                            <td>Algas Brancas</td>
+                            <td>Minas, Esgoto, Covil dos Insetos Mutantes e Cabana da Bruxa</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.do.mar"></td>
+                            <td><img class="principal" src="../imagens/peixes/galeia.do.mar.png" alt="Geléia do Mar"></td>
+                            <td>Geléia do Mar</td>
+                            <td>Oecano</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.do.rio"></td>
+                            <td><img class="principal" src="../imagens/peixes/geleia.do.rio.png" alt="Geléia do Rio"></td>
+                            <td>Geléia do Rio</td>
+                            <td>Rios e Lagoas</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="geleia.da.caverna"></td>
+                            <td><img class="principal" src="../imagens/peixes/geleia.da.caverna.png" alt="Geléia da Caverna"></td>
+                            <td>Geléia da Caverna</td>
+                            <td>Mina (20º, 60º e 100º)</td>
+                            <td>Qualquer</td>
+                            <td>Todas as Estações</td>
+                            <td>Qualquer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="caixa">
+            <div class="caixa-header">
+                <h1 class="segundo"><img src="../imagens/artesanato/covo.png" alt="Covo" class="ingrediente"> Covo</h1>
+                <button class="esconde2"></button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><button class="toggle-all">&#x2714</button></th>
+                            <th>Imagem</th>
+                            <th>Nome</th>
+                            <th style="min-width: 250px;">Local</th>
+                            <th>Clima</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="lagosta"></td>
+                            <td><img class="principal" src="../imagens/peixes/lagosta.png" alt="Lagosta"></td>
+                            <td>Lagosta</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="concha"></td>
+                            <td><img class="principal" src="../imagens/peixes/concha.png" alt="Concha"></td>
+                            <td>Concha</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="caranguejo"></td>
+                            <td><img class="principal" src="../imagens/peixes/caranguejo.png" alt="Caraguejo"></td>
+                            <td>Caranguejo</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="berbigao"></td>
+                            <td><img class="principal" src="../imagens/peixes/berbigao.png" alt="Berbigão"></td>
+                            <td>Berbigão</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="mexilhao"></td>
+                            <td><img class="principal" src="../imagens/peixes/mexilhao.png" alt="Mexilhão"></td>
+                            <td>Mexilhão</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="camarao"></td>
+                            <td><img class="principal" src="../imagens/peixes/camarao.png" alt="Camarão"></td>
+                            <td>Camarão</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="ostra"></td>
+                            <td><img class="principal" src="../imagens/peixes/ostra.png" alt="Ostra"></td>
+                            <td>Ostra</td>
+                            <td>Oceano</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="lagostim"></td>
+                            <td><img class="principal" src="../imagens/peixes/lagostim.png" alt="Lagostim"></td>
+                            <td>Lagostim</td>
+                            <td>Rios e Lagos da Fazenda<br>Rio da Montanha, Cidade e Floresta Cinzenta</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="lesma"></td>
+                            <td><img class="principal" src="../imagens/peixes/lesma.png" alt="Lesma"></td>
+                            <td>Lesma</td>
+                            <td>Rios e Lagos da Fazenda<br>Rio da Montanha, Cidade e Floresta Cinzenta</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                        <tr data-estacao="qualquer">
+                            <td><input type="checkbox" class="task" id="caramujo"></td>
+                            <td><img class="principal" src="../imagens/peixes/caramujo.png" alt="Caramujo"></td>
+                            <td>Caramujo</td>
+                            <td>Rios e Lagos da Fazenda<br>Rio da Montanha, Cidade e Floresta Cinzenta</td>
+                            <td>Todas as Estações</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://github.com/KatherineQdt" target="_blank" rel="external">@KatherineQdt</a></p>
+    </footer>
+</body>
+</html>
