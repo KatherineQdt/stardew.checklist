@@ -517,6 +517,47 @@ em{
   font-size: 0.9em;
 }
 
+#btnTopo {
+  display: none; /* começa escondido */
+  position: fixed;
+  bottom: 20px; /* distância do fundo */
+  right: 20px;  /* distância da lateral */
+  z-index: 100; /* fica por cima de outros elementos */
+  
+  width: 52px;
+  height: 52px;
+
+  background-color: #d69e7f;
+  border: 3px solid #953b0a;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+}
+
+#btnTopo img{
+  width: 52px;
+  margin: auto;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+#btnTopo:hover {
+  background-color: #d1782a;
+}
+
+@media (max-width: 600px){
+  #btnTopo{
+    width: 45px;
+    height: 45px;
+  }
+
+  #btnTopo img{
+    margin-top: -7px;
+    margin-left: -6px;
+  }
+}
+
 footer{
   background-color: #965114;
 }

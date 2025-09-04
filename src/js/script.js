@@ -154,3 +154,23 @@ document.querySelectorAll(".esconde2").forEach(btn => {
 
 // ==================== Inicialização ====================
 restoreState();
+
+// Pega o botão
+const btnTopo = document.getElementById("btnTopo");
+
+// Mostra ou esconde conforme a rolagem
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) { 
+    btnTopo.style.display = "block"; 
+  } else {
+    btnTopo.style.display = "none";
+  }
+});
+
+// Faz voltar para o topo ao clicar
+btnTopo.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // rolagem suave
+  });
+});
