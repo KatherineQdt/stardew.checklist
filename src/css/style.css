@@ -128,7 +128,7 @@ nav a:hover{
   background-color: #d1782a;
 }
 
-.junimo{
+#junimo{
   width: 40px;
   height: 40px;
   background-image: url("../imagens/gif/junimoprogressbar.gif");
@@ -140,7 +140,7 @@ nav a:hover{
 }
 
 @media (max-width: 600px){
-  .junimo{
+  #junimo{
     margin-left: 14px;
   }
 }
@@ -162,6 +162,47 @@ nav a:hover{
   width: 0%;
   background: #3fbd3f;
   transition: width 1.2s ease-out;
+}
+
+#parabens {
+  font-family: 'stardew';
+  font-weight: 400;
+  font-size: 1.6em;
+  text-align: center;
+  animation: pop 0.6s ease forwards;
+}
+
+#junimo-dance{
+  width: 242px;
+  height: 42px;
+  background-image: url("../imagens/gif/junimos.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: pop 0.6s ease forwards;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: -10px;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh) rotate(360deg); }
 }
 
 /* Estilo base: mobile-first */

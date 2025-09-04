@@ -21,13 +21,58 @@ function updateProgress() {
   const percent = (checked / total) * 100;
   progressBar.style.width = percent + "%";
 
-  const junimo = document.querySelector('.junimo');
-  if (junimo) {
+  const junimo = document.querySelector('#junimo');
+  const junimoDance = document.querySelector('#junimo-dance');
+  const parabens = document.querySelector('#parabens');
+  const confettiContainer = document.querySelector('#confetti-container');
+
+  if (junimo && percent < 100 ) {
     const containerWidth = document.querySelector('.progress-container').offsetWidth;
     const junimoWidth = junimo.offsetWidth;
     const posicao = (containerWidth - junimoWidth) * (percent / 100);
     junimo.style.left = posicao + "px";
   }
+
+  // quando chega a 100%
+  if (percent === 100) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+  setTimeout(() => {
+    junimo.classList.add("hidden");
+    junimoDance.classList.remove("hidden");
+    parabens.classList.remove("hidden");
+    confettiContainer.classList.remove("hidden");
+    launchConfetti();
+  }, 800); // espera ~0.8s pro scroll
+
+  } else {
+    // garante que volta ao estado inicial se desmarcar algo
+    junimo.classList.remove("hidden");
+    junimoDance.classList.add("hidden");
+    parabens.classList.add("hidden");
+    confettiContainer.classList.add("hidden");
+    confettiContainer.innerHTML = ""; // limpa confetes antigos
+  }
+}
+
+// cria confetes
+function launchConfetti() {
+  const container = document.getElementById("confetti-container");
+  for (let i = 0; i < 80; i++) {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.backgroundColor = randomColor();
+    confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    container.appendChild(confetti);
+
+    setTimeout(() => confetti.remove(), 4000);
+  }
+}
+
+function randomColor() {
+  const colors = ["#f94144", "#f3722c", "#f9c74f", "#90be6d", "#577590"];
+  return colors[Math.floor(Math.random() * colors.length)];
 }
 
 // Restaura estado dos checkboxes e recalcula progresso

@@ -30,10 +30,13 @@
                 <a href="#">Nozes Douradas</a>
             </div>
         </nav>
-        <div class="junimo"></div>
+        <div id="junimo-dance" class="hidden"></div>
+        <div id="junimo"></div>
         <div class="progress-container">
             <div id="progress-bar"></div>
         </div>
+        <div id="parabens" class="hidden">Parabéns! Você completou o desafio!</div>
+        <div id="confetti-container" class="hidden"></div>
         <div class="button">
             <button data-estacao="primavera">&#x1F338 Primavera</button>
             <button data-estacao="verao">&#x1F31E Verão</button>
@@ -115,12 +118,12 @@
                         <td>O Deserto e Plantio</td>
                         <td>Todas as Estações</td>
                     </tr>
-                    <tr data-estacao="verao">
+                    <tr data-estacao="verao qualquer">
                         <td><input type="checkbox" class="task" id="banana"></td>
                         <td><img class="principal" src="src/imagens/colecao/banana.png" alt="Banana"></td>
                         <td>Banana</td>
-                        <td>Verão <em>*Plantado na Fazenda*</em></td>
-                        <td>Todas as Estações</td>
+                        <td>Plantio </td>
+                        <td>Verão <em>*Plantado na Fazenda*</em><br>Todas as Estações</td>
                     </tr>
                     <tr data-estacao="qualquer">
                         <td><input type="checkbox" class="task" id="seiva"></td>
@@ -212,6 +215,153 @@
                         <td>Ruibarbo</td>
                         <td>Plantio</td>
                         <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="melao"></td>
+                        <td><img class="principal" src="src/imagens/colecao/melao.png" alt="Melão"></td>
+                        <td>Melão</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="tomate"></td>
+                        <td><img class="principal" src="src/imagens/colecao/tomate.png" alt="Tomate"></td>
+                        <td>Tomate</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="morel"></td>
+                        <td><img class="principal" src="src/imagens/colecao/morel.png" alt="Morel"></td>
+                        <td>Morel</td>
+                        <td>Coleta</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="mirtilo"></td>
+                        <td><img class="principal" src="src/imagens/colecao/mirtilo.png" alt="Mirtilo"></td>
+                        <td>Mirtilo</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao qualquer">
+                        <td><input type="checkbox" class="task" id="broto.de.samambaia"></td>
+                        <td><img class="principal" src="src/imagens/colecao/broto.de.samambaia.png" alt="Broto de Samambaia"></td>
+                        <td>Broto de Samambaia</td>
+                        <td>Coleta</td>
+                        <td>Verão<br>Todas as Estações na Ilha Gengibre e Caverna da Caveira</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="pimenta"></td>
+                        <td><img class="principal" src="src/imagens/colecao/pimenta.png" alt="Pimenta"></td>
+                        <td>Pimenta</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao outono">
+                        <td><input type="checkbox" class="task" id="trigo"></td>
+                        <td><img class="principal" src="src/imagens/colecao/trigo.png" alt="Trigo"></td>
+                        <td>Trigo</td>
+                        <td>Plantio</td>
+                        <td>Verão e Outono</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="rabanete"></td>
+                        <td><img class="principal" src="src/imagens/colecao/rabanete.png" alt="Rabanete"></td>
+                        <td>Rabanete</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="repolho.roxo"></td>
+                        <td><img class="principal" src="src/imagens/colecao/repolho.roxo.png" alt="Repolho Roxo"></td>
+                        <td>Repolho Roxo</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao">
+                        <td><input type="checkbox" class="task" id="carambola"></td>
+                        <td><img class="principal" src="src/imagens/colecao/carambola.png" alt="Carambola"></td>
+                        <td>Carambola</td>
+                        <td>Plantio</td>
+                        <td>Verão</td>
+                    </tr>
+                    <tr data-estacao="verao outono">
+                        <td><input type="checkbox" class="task" id="milho"></td>
+                        <td><img class="principal" src="src/imagens/colecao/milho.png" alt="Milho"></td>
+                        <td>Milho</td>
+                        <td>Plantio</td>
+                        <td>Verão e Outono</td>
+                    </tr>
+                    <tr data-estacao="primavera">
+                        <td><input type="checkbox" class="task" id="arroz.nao.moido"></td>
+                        <td><img class="principal" src="src/imagens/colecao/arroz.nao.moido.png" alt="Arroz não Moído"></td>
+                        <td>Arroz não Moído</td>
+                        <td>Plantio</td>
+                        <td>Primavera</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="beringela"></td>
+                        <td><img class="principal" src="src/imagens/colecao/beringela.png" alt="Beringela"></td>
+                        <td>Beringela</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="alcachofra"></td>
+                        <td><img class="principal" src="src/imagens/colecao/alcachofra.png" alt="Alcachofra"></td>
+                        <td>Alcachofra</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="abobora"></td>
+                        <td><img class="principal" src="src/imagens/colecao/abobora.png" alt="Abobora"></td>
+                        <td>Abobora</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="couve.chinesa"></td>
+                        <td><img class="principal" src="src/imagens/colecao/couve.chinesa.png" alt="Couve Chinesa"></td>
+                        <td>Couve Chinesa</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="inhame"></td>
+                        <td><img class="principal" src="src/imagens/colecao/inhame.png" alt="Inhame"></td>
+                        <td>Inhame</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="cantarelo"></td>
+                        <td><img class="principal" src="src/imagens/colecao/cantarelo.png" alt="Cantarelo"></td>
+                        <td>Cantarelo</td>
+                        <td>Coleta</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="oxicoco"></td>
+                        <td><img class="principal" src="src/imagens/colecao/oxicoco.png" alt="Oxicoco"></td>
+                        <td>Oxicoco</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
+                    </tr>
+                    <tr data-estacao="inverno">
+                        <td><input type="checkbox" class="task" id="azevinho"></td>
+                        <td><img class="principal" src="src/imagens/colecao/azevinho.png" alt="Azevinho"></td>
+                        <td>Azevinho</td>
+                        <td>Coleta</td>
+                        <td>Inverno</td>
+                    </tr>
+                    <tr data-estacao="outono">
+                        <td><input type="checkbox" class="task" id="beterraba"></td>
+                        <td><img class="principal" src="src/imagens/colecao/beterraba.png" alt="Beterraba"></td>
+                        <td>Beterraba</td>
+                        <td>Plantio</td>
+                        <td>Outono</td>
                     </tr>
                     </tbody>
                 </table>
