@@ -174,3 +174,23 @@ btnTopo.addEventListener("click", () => {
     behavior: "smooth" // rolagem suave
   });
 });
+
+// ======================= Feedback ==========================
+
+(function prefill() {
+  try {
+
+    var baseViewUrl = "https://docs.google.com/forms/d/e/1FAIpQLSelOSf-RJMDyNlyAzUZq8yGLrLTOpXZNZCiawDc9-SNQU4ZIg/viewform?usp=dialog";
+
+    var entryPagina = "1103647892"; 
+
+    var u = new URL(baseViewUrl);
+    u.searchParams.set("usp", "pp_url");
+    u.searchParams.set(entryPagina, window.location.href);
+
+    document.getElementById("gform").src = u.toString();
+  } catch (e) {
+
+    console.warn("Prefill falhou (usando embed padrão):", e);
+  }
+})();
