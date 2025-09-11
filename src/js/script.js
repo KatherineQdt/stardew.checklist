@@ -1,3 +1,5 @@
+console.log("Script carregado!");
+
 // ==================== Seletores ====================
 const checkboxes = document.querySelectorAll("input[type='checkbox']");
 const botoes = document.querySelectorAll(".button button[data-estacao]");
@@ -157,13 +159,17 @@ restoreState();
 
 // Pega o botão
 const btnTopo = document.getElementById("btnTopo");
+console.log("Botão capturado:", btnTopo);
 
-// Mostra ou esconde conforme a rolagem
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) { 
-    btnTopo.style.display = "block"; 
+  console.log("Scroll detectado! scrollY:", window.scrollY);
+  
+  if (window.scrollY > 5) {
+    btnTopo.style.display = "block";
+    console.log("Botão VISÍVEL");
   } else {
     btnTopo.style.display = "none";
+    console.log("Botão ESCONDIDO");
   }
 });
 
@@ -175,22 +181,3 @@ btnTopo.addEventListener("click", () => {
   });
 });
 
-// ======================= Feedback ==========================
-
-(function prefill() {
-  try {
-
-    var baseViewUrl = "https://docs.google.com/forms/d/e/1FAIpQLSelOSf-RJMDyNlyAzUZq8yGLrLTOpXZNZCiawDc9-SNQU4ZIg/viewform?usp=dialog";
-
-    var entryPagina = "1103647892"; 
-
-    var u = new URL(baseViewUrl);
-    u.searchParams.set("usp", "pp_url");
-    u.searchParams.set(entryPagina, window.location.href);
-
-    document.getElementById("gform").src = u.toString();
-  } catch (e) {
-
-    console.warn("Prefill falhou (usando embed padrão):", e);
-  }
-})();

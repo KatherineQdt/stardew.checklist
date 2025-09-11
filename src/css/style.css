@@ -571,9 +571,9 @@ em{
 #btnTopo {
   display: none; /* começa escondido */
   position: fixed;
-  bottom: 20px; /* distância do fundo */
+  bottom: 80px; /* distância do fundo */
   right: 20px;  /* distância da lateral */
-  z-index: 100; /* fica por cima de outros elementos */
+  z-index: 9999; /* fica por cima de outros elementos */
   
   width: 52px;
   height: 52px;
@@ -594,7 +594,8 @@ em{
 }
 
 #btnTopo:hover {
-  background-color: #d1782a;
+  background-color: #e68a3a;
+  transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.45)
 }
 
 @media (max-width: 600px){
@@ -612,8 +613,9 @@ em{
 .fab-report{
   position: fixed;
   right: 20px;
-  bottom: 80px;
-  width: 46px; height: 46px;
+  bottom: 20px;
+  width: 46px; 
+  height: 46px;
   border-radius: 50%;
   background-color: #d69e7f;
   border: 3px solid #953b0a;
@@ -623,7 +625,10 @@ em{
   z-index: 100;
   transition: transform .15s ease, box-shadow .2s ease;
 }
-.fab-report:hover{ transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.45); }
+.fab-report:hover{
+  background-color: #e68a3a;
+  transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.45);
+}
 
 .report{
   font-weight: normal;
