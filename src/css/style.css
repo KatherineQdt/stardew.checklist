@@ -376,10 +376,9 @@ main h1{
   /*overflow-x: auto;*/
 }
 
-.wrap {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 24px;
+main div.titulo {
+  margin: auto;
+  margin-top: -5px;
 }
 
 .card {

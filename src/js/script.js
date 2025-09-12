@@ -1,5 +1,3 @@
-console.log("Script carregado!");
-
 // ==================== Seletores ====================
 const checkboxes = document.querySelectorAll("input[type='checkbox']");
 const botoes = document.querySelectorAll(".button button[data-estacao]");
@@ -159,17 +157,14 @@ restoreState();
 
 // Pega o botão
 const btnTopo = document.getElementById("btnTopo");
-console.log("Botão capturado:", btnTopo);
 
 window.addEventListener("scroll", () => {
-  console.log("Scroll detectado! scrollY:", window.scrollY);
   
-  if (window.scrollY > 5) {
+  
+  if (window.scrollY > 200) {
     btnTopo.style.display = "block";
-    console.log("Botão VISÍVEL");
   } else {
     btnTopo.style.display = "none";
-    console.log("Botão ESCONDIDO");
   }
 });
 
