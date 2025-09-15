@@ -633,6 +633,13 @@ em{
   font-weight: normal;
 }
 
+@media(max-width: 600px){
+  .fab-report{
+    width: 39px; 
+    height: 39px;
+  }
+}
+
 footer{
   background-color: #965114;
   padding: 10px;
@@ -653,4 +660,8 @@ footer a{
 
 footer a:hover{
   text-decoration: underline;
+}
+
+abbr{
+  text-decoration: none;
 }
