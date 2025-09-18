@@ -389,7 +389,7 @@
                         <td><img class="principal" src="src/imagens/colecao/pale.ale.png" alt="Pale Ale"></td>
                         <td>Pale Ale</td>
                         <td>Feito no Barril com Lúpulo</td>
-                        <td>Verão</td>
+                        <td>Verão<br><em>ingrediente encontrado só nessa estação</em></td>
                     </tr>
                     <tr data-estacao="verao">
                         <td><input type="checkbox" class="task" id="lupulo"></td>
@@ -494,7 +494,7 @@
                         <td><img class="principal" src="src/imagens/colecao/cerveja.png" alt="Cerveja"></td>
                         <td>Cerveja</td>
                         <td>Feito no Barril com Trigo</td>
-                        <td>Verão e Outono</td>
+                        <td>Verão e Outono<br><em>ingrediente encontrado só nessas estações</em></td>
                     </tr>
                     <tr data-estacao="qualquer">
                         <td><input type="checkbox" class="task" id="vinho"></td>
@@ -746,7 +746,7 @@
                         <td><img class="principal" src="src/imagens/colecao/oleo.de.trufas.png" alt="Óleo de Trufas"></td>
                         <td>Óleo de Trufas</td>
                         <td>Feito no Gerador de Óleo com Trufas</td>
-                        <td>Primavera, Verão e Outono</td>
+                        <td>Primavera, Verão e Outono<br><em>ingrediente encontrado só nessas estações</em></td>
                     </tr>
                     <tr data-estacao="primavera verao qualquer">
                         <td><input type="checkbox" class="task" id="grao.de.cafe"></td>
@@ -823,7 +823,7 @@
                         <td><img class="principal" src="src/imagens/colecao/hidromel.png" alt="Hidromel"></td>
                         <td>Hidromel</td>
                         <td>Feito no Barril com Mel</td>
-                        <td>Primavera, Verão e Outono</td>
+                        <td>Primavera, Verão e Outono<br><em>ingrediente encontrado só nessas estações</em></td>
                     </tr>
                     <tr data-estacao="primavera">
                         <td><input type="checkbox" class="task" id="tulipa"></td>
@@ -865,7 +865,7 @@
                         <td><img class="principal" src="src/imagens/colecao/cha.verde.png" alt="Chá Verde"></td>
                         <td>Chá Verde</td>
                         <td>Feito no Barril com Folhas de Chá</td>
-                        <td>Primavera, Verão e Outono </td>
+                        <td>Primavera, Verão e Outono<br><em>ingrediente encontrado só nessas estações</em></td>
                     </tr>
                     <tr data-estacao="primavera">
                         <td><input type="checkbox" class="task" id="damasco"></td>
@@ -906,7 +906,7 @@
                         <td><input type="checkbox" class="task" id="carne.de.inseto"></td>
                         <td><img class="principal" src="src/imagens/colecao/carne.de.inseto.png" alt="Carne de Inseto"></td>
                         <td>Carne de Inseto</td>
-                        <td>Drop de monstros inseto</td>
+                        <td>Matando Insetos na Mina</td>
                         <td>Todas as Estações</td>
                     </tr>
                     <tr data-estacao="qualquer">
@@ -929,6 +929,55 @@
                         <td>Resina de Carvalho</td>
                         <td>Coletado na Torneirinha na Árvore Carvalho</td>
                         <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="alcatrao.de.pinho"></td>
+                        <td><img class="principal" src="src/imagens/colecao/alcatrao.de.pinho.png" alt="Alcatrão de Pinho"></td>
+                        <td>Alcatrão de Pinho</td>
+                        <td>Coletado na Torneirinha na Árvore Pinheiro</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="gosma"></td>
+                        <td><img class="principal" src="src/imagens/colecao/gosma.png" alt="Gosma"></td>
+                        <td>Gosma</td>
+                        <td>Matando Gosmas na Mina</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="asa.de.morcego"></td>
+                        <td><img class="principal" src="src/imagens/colecao/asa.de.morcego.png" alt="Asa de Morcego"></td>
+                        <td>Asa de Morcego</td>
+                        <td>Matando Morcegos na Mina</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="essencia.solar"></td>
+                        <td><img class="principal" src="src/imagens/colecao/essencia.solar.png" alt="Essência Solar"></td>
+                        <td>Essência Solar</td>
+                        <td>Matando Monstros na Mina<br><em>Fantasmas, Morcego de Irídio, Cabeça de Metal, Caveira Assombrada, Face e Múmia</em></td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="essencia.nula"></td>
+                        <td><img class="principal" src="src/imagens/colecao/essencia.nula.png" alt="Essência Nula"></td>
+                        <td>Essência Nula</td>
+                        <td>Matando Monstros na Mina<br><em>Bruto das Sombras, Xamã das Sombras, Caveira Assombrada e Serpente</em></td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="qualquer">
+                        <td><input type="checkbox" class="task" id="fibra"></td>
+                        <td><img class="principal" src="src/imagens/colecao/fibra.png" alt="Fibra"></td>
+                        <td>Fibra</td>
+                        <td>Cortando Ervas daninhas</td>
+                        <td>Todas as Estações</td>
+                    </tr>
+                    <tr data-estacao="primavera verao outono">
+                        <td><input type="checkbox" class="task" id="pilhas"></td>
+                        <td><img class="principal" src="src/imagens/colecao/pilhas.png" alt="Pilhas"></td>
+                        <td>Pilhas</td>
+                        <td>Feito no Para-raios e Painel Solar</td>
+                        <td>Primavera, Verão e Outono</td>
                     </tr>
                     </tbody>
                 </table>
